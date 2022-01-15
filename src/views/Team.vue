@@ -1,18 +1,11 @@
 <template>
   <div id="team">
-    <h1>team </h1>
+   tesm
   </div>
 </template>
-
-<script>
-export default {
-  name: 'team',
-}
-</script>
-
 <style lang="scss">
-#team{
-  background-color: antiquewhite;
+#team {
+  background-color: rgb(226, 174, 62);
   height: 100vh;
 }
 </style>

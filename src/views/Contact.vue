@@ -1,19 +1,11 @@
 <template>
   <div id="contact">
-    <h1>contact </h1>
+ contact
   </div>
 </template>
-
-<script>
-export default {
-  name: 'contact',
-}
-</script>
-
 <style lang="scss">
-#contact{
-  background-color: red;
-  height:500px;
-
+#contact {
+  background-color: rgb(186, 230, 83);
+  height: 100vh;
 }
 </style>

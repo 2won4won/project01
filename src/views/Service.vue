@@ -1,15 +1,11 @@
 <template>
-  <div>
-    <h1>sevice </h1>
+  <div id="service">
+  ser
   </div>
 </template>
-
-<script>
-export default {
-  name: 'service',
+<style lang="scss">
+#service {
+  background-color: rgb(231, 97, 171);
+  height: 100vh;
 }
-</script>
-
-<style>
-
 </style>

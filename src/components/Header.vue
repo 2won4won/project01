@@ -1,30 +1,37 @@
 <template>
-  <div id="header">
-    <b-container fluid  no-gutter  >
-      <div id="nav" class="d-flex justify-content-around" >
-      <b-navbar toggleable="sm" type="dark" >
-        <b-navbar-brand> wonhago </b-navbar-brand>
-        <b-navbar-toggle target="nav-collapse">
-          <template #default="{ expanded }">
-            <b-icon v-if="expanded" icon="chevron-bar-up"></b-icon>
-            <b-icon v-else icon="chevron-bar-down"></b-icon>
-           </template>
-        </b-navbar-toggle>
-        <b-collapse id="nav-collapse" is-nav >
-          <b-navbar-nav id="navList"  v-b-scrollspy:list>
-            <b-nav-item href="#nav1">HOME </b-nav-item>
-            <b-nav-item href="#nav2">SERVICE </b-nav-item>
-            <b-nav-item href="#nav3">TEAM </b-nav-item>
-            <b-nav-item href="#nav4">CONTACT </b-nav-item>
-          </b-navbar-nav>
-        </b-collapse>
-      </b-navbar>
+  <div id="header" >
+    <!-- 네비바 상단 고정 : class="fixed-top" -->
+    <b-container fluid id="navBox" class="fixed-top">
+      <!-- logo 이미지삽입 -->
+      <div> 
+        <b-img :src="logo"></b-img>
+      </div> 
+      <!-- 메뉴바 -->
+      <div id="nav"  >
+        <b-navbar toggleable="sm" type="dark" class="justify-content-around">
+          <!-- <b-navbar-brand> wonhago </b-navbar-brand> -->
+          <!-- <b-navbar-toggle target="nav-collapse">
+            <template #default="{ expanded }">
+              <b-icon v-if="expanded" icon="chevron-bar-up"></b-icon>
+              <b-icon v-else icon="chevron-bar-down"></b-icon>
+            </template>
+          </b-navbar-toggle> -->
+          <!-- <b-collapse id="nav-collapse" is-nav > -->
+            <b-nav  id="navList"  v-b-scrollspy:list  >
+              <b-nav-item href="#home"  >HOME </b-nav-item>
+              <b-nav-item href="#service">SERVICE </b-nav-item>
+              <b-nav-item href="#team" >TEAM </b-nav-item>
+              <b-nav-item href="#contact" >CONTACT </b-nav-item>
+            </b-nav>
+          <!-- </b-collapse> -->
+        </b-navbar>
       </div>
-      <div id="list"  style="position:relative; overflow-y:auto; height:100%" >
-        <Home id="nav1"/>
-        <Service id="nav2" />
-        <Team id="nav3" />
-        <Contact id="nav4" />
+      <!-- view(scrollyspy) pages -->
+      <div id="list"  style="position:relative; overflow-y:auto; height:100vh" >
+        <Home id="home"/>
+        <Service id="service" />
+        <Team id="team" />
+        <Contact id="contact" />
       </div>
     </b-container>
   </div>
@@ -40,22 +47,46 @@ export default {
   name: 'header',
   components: {
     Home, Service, Team, Contact
-  }
+  },
+  data() {
+    return {
+      logo: require ('../assets/images/logo.png')
+    }
+  },
+  
 }
 </script>
 <style lang="scss">
+  #navBox {
+    padding: 0 !important;
+    width: 100vw;
+  }
+  // view 화면 배경색과 글자색 제어
+  #list {
+    background-color: $bg;
+    color: $t1 ;
+  }
   #nav {
     background-color: $bg_nav;
     padding: 0;
+  }  
 
-    a {
+  a.nav-link {
     font-weight: bold;
-    color: $font_nav_color;
+    color: $a;
+    font-size: 1.2rem;
 
-    &.router-link-exact-active {
-      color: $a_active;
+    &:hover {
+      color: $a_hover;
     }
-  }
+
+    &.active {
+      background-color: none;
+      color: $a_active;
+      font-weight: bolder ;
+      font-size: 1.2rem;
+    }
+  
 
   }
 
