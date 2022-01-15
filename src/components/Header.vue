@@ -18,7 +18,8 @@
           </b-navbar-toggle> -->
           <!-- <b-collapse id="nav-collapse" is-nav > -->
             <b-nav  id="navList"  v-b-scrollspy:list  >
-              <b-nav-item href="#home"  >HOME </b-nav-item>
+              <b-nav-item href="#home2"  >HOME2 </b-nav-item>
+              <!-- <b-nav-item href="#home"  >HOME </b-nav-item> -->
               <b-nav-item href="#service">SERVICE </b-nav-item>
               <b-nav-item href="#team" >TEAM </b-nav-item>
               <b-nav-item href="#contact" >CONTACT </b-nav-item>
@@ -28,7 +29,8 @@
       </div>
       <!-- view(scrollyspy) pages -->
       <div id="list"  style="position:relative; overflow-y:auto; height:100vh" >
-        <Home id="home"/>
+        <Home2 id="home2"/>
+        <!-- <Home id="home"/> -->
         <Service id="service" />
         <Team id="team" />
         <Contact id="contact" />
@@ -38,7 +40,8 @@
 </template>
 
 <script>
-import Home from "@/views/Home.vue";
+// import Home from "@/views/Home.vue";
+import Home2 from "@/views/Home2.vue";
 import Service from "@/views/Service.vue";
 import Team from "@/views/Team.vue";
 import Contact from "@/views/Contact.vue";
@@ -46,7 +49,7 @@ import Contact from "@/views/Contact.vue";
 export default {
   name: 'header',
   components: {
-    Home, Service, Team, Contact
+  Service, Team, Contact, Home2
   },
   data() {
     return {

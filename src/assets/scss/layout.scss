@@ -1,3 +1,15 @@
-@media (max-width:575px) {
+@media (max-width:575px) { 
   html { font-size: 60%;}
-}
+}  
+@media (min-width:576px) and (max-width:767px ) { 
+  html { font-size: 70%;}
+}  
+@media (min-width:768px) and (max-width:991px ) { 
+  html { font-size: 80%;}
+}  
+@media (min-width:992px) and (max-width:1119px ) { 
+  html { font-size: 90%;}
+}  
+// @media (min-width:1200px)  { 
+//   html { font-size: 80%;}
+// }  
