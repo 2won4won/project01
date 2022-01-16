@@ -1,0 +1,37 @@
+ // 이미지 흐리게 : opacity 0~1
+ .imgPostion {
+    position: absolute;
+    text-align: center;
+    opacity: 0.5;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  } 
+  .colBox {
+    padding: auto;
+  }
+  // box에 위치 지정 -> img 크기 규정  
+  .imgBox {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+.imgSize50 {
+  width: 50%;
+}
+.imgSize60 {
+  // 원본사이가 작을때 rem 사용 ->분기점마다 크기 조절
+  width: 85%;
+  border: solid 0.1rem rgb(184, 238, 211);
+  background-color: rgb(172, 197, 197);
+  @media (max-width:575px) { width: 60%}  
+}
+
+// .imgBox2 {
+//   // width: 14rem;
+//   // height: 14rem;
+//   object-fit: contain;
+//   @media (max-width:575px) { width: 6rem; height: 6rem; text-align: end; }
+//   @media (min-width:576px) and (max-width:767px) { width: 9rem; height:9rem; text-align: end;}
+//   @media (min-width:768px) and (max-width:991px) { width: 11rem; height:11rem; text-align: end;}
+// }  
