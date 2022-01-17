@@ -88,7 +88,7 @@
                   </div>
         </div>  
       </div>
-      <div id="wont" class=" box">
+      <!-- <div id="wont" class=" box">
         <div class="smallBox">
           <div class="titleTop mb-4"> <span class="blue"> WONT </span>ECONOMICS</div>
           <div id="wontop">
@@ -98,9 +98,9 @@
               </div>  
               <div id="imgW" class="d-flex justify-content-center pt-3 pr-5 mb-3" >
                 <b-img :src="wont" id="wontImg"></b-img>
-              </div>  
+              </div>   -->
             <!-- mt-margin-top -->
-              <div class="contents pt-n5" id="conW">  
+              <!-- <div class="contents pt-n5" id="conW">  
                 As a bootster of interoperability between audiences and advertisers, 
                 Audience participating in and completing quests lised by advertisers will be 
                 rewarded with <span class="blue subtitle">1% of WONT </span> 
@@ -108,43 +108,43 @@
               </div>
           </div>
         </div>  
-      </div>  
-       <div id="wont1" class=" box">
-        <div class="smallBox">
+      </div>   -->
+       <div id="wont1" class="box">
           <div class="title pb-5" id="onlyM"> <span class="blue"> WONT </span>ECONOMICS</div>
           <div id="wontop1">
               <!-- xs에서만 보임 -->
-              <div class="titleTop d-block d-sm-none ">
+              <div class="titleTop d-block d-sm-none">
                  <div id="imgW2" class="pr-5" >
                  <!-- <div id="imgW2" class="d-flex justify-content-end pr-5" > -->
                   <b-img id="wontImg3"></b-img>
                 </div>  
-                <dl class="row"> 
+                <dl class="row" id="inter2"> 
                   <dt class="col-2 blue"> 30% </dt>
                   <dd class="col-10 pb-n5"> CONTRIBUTION FOR ECOSYSTM </dd>
                 </dl>
-                <dl class="row mt-n5 mb-5"> 
+                <dl class="row mt-n5 mb-5" id="inline"> 
                   <dt class="col-2 blue"> 1% </dt>
                   <dd class="col-10"> REWARD FOR AUDIENCE  </dd>
                 </dl>
               </div>  
               <!-- xs에서는 비활성화 -->
               <div class="titleTop d-none d-sm-block" >
-                <p > <span class="blue hig"> 30% </span> CONTRIBUTION FOR ECOSYSTM</p>
-                <p id="inter"> <span class="blue hig"> 1% </span> REWARD FOR AUDIENCE </p>
+                <div class="text-center">
+                  <p > <span class="blue hig"> 30% </span> CONTRIBUTION FOR ECOSYSTM</p>
+                  <p id="inter"> <span class="blue hig"> 1% </span> REWARD FOR AUDIENCE </p>
+                </div>
                 <div id="imgW" class="d-flex justify-content-center pt-sm-3 pr-5 mb-3" >
                   <b-img :src="wont" id="wontImg2"></b-img>
                 </div>  
               </div>  
               <!-- mt-margin-top -->
-              <div class="contents pt-n5">  
+              <div class="contents pt-n5 text-center">  
                 As a bootster of interoperability between audiences and advertisers, 
                 Audience participating in and completing quests lised by advertisers will be 
-                rewarded with <span class="blue subtitle">1% of WONT </span> 
+                rewarded with <span class="blue subtitle wrapVoca">1% of WONT </span> 
                 against the reward amount on each quest   
               </div>
           </div>
-        </div>  
       </div>  
       <div id="dis" class="box">
         <div class="small box">
@@ -186,16 +186,15 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-  #wrap, #playContents, #imgBox2 {
-    position: relative;
+#wrap, #playContents, #imgBox2 {
+  position: relative;
+}
+#playContents {
+  text-align: left;
   }
-  #playContents {
-    text-align: left;
-   }
-
- .wrapVoca {
-  white-space: nowrap;
- }
+.wrapVoca {
+white-space: nowrap;
+}
 #wontop{
   // text-align: left !important;
   padding: 1rem 4.5rem 1rem 4.5rem;
@@ -207,7 +206,6 @@ export default {
 // col- left 정렬 (good) -> layout1 지정
 #wontop1 {
   text-align: left !important;
-  padding: 1rem 4.5rem 1rem 4.5rem;
 }
 .hig {
   text-shadow: 0.1rem 0.1rem rgb(166,193,212);
@@ -217,10 +215,20 @@ export default {
 #inter {
   line-height: 0;
 }
+#inter2 {
+  line-height: 2.5rem;
+}
+// 1% 줄 간격
+#inline {
+  margin-top: -1rem;
+}
+
+
 #wontImg, #wontImg2,#wontImg3 {
   width: 5rem;
 }
  #imgDis {
   width: 90%;
 }
+
 </style>

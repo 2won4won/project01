@@ -3,28 +3,27 @@
     <!-- 네비바 상단 고정 : class="fixed-top" -->
     <b-container fluid id="navBox" class="fixed-top">
       <!-- logo 이미지삽입 -->
-      <div> 
-        <b-img :src="logo"></b-img>
-      </div> 
+      <div> <b-img :src="logo"></b-img>  </div> 
       <!-- 메뉴바 -->
-      <div id="nav"  >
-        <b-navbar toggleable="sm" type="dark" class="justify-content-around">
-          <!-- <b-navbar-brand> wonhago </b-navbar-brand> -->
-          <!-- <b-navbar-toggle target="nav-collapse">
+      <div id="nav"  class="d-flex justify-content-around">
+        <b-navbar toggleable="sm" type="dark" >
+        <!-- <b-navbar-brand> wonhago </b-navbar-brand> -->
+         <b-navbar-toggle target="nav-collapse">
             <template #default="{ expanded }">
               <b-icon v-if="expanded" icon="chevron-bar-up"></b-icon>
               <b-icon v-else icon="chevron-bar-down"></b-icon>
             </template>
-          </b-navbar-toggle> -->
-          <!-- <b-collapse id="nav-collapse" is-nav > -->
-            <b-nav  id="navList"  v-b-scrollspy:list  >
+          </b-navbar-toggle>
+          <b-collapse id="nav-collapse" is-nav>
+                   <!-- class="d-flex flex-md-row flex-xl-column" -->
+            <b-nav  id="navList"  v-b-scrollspy:list >
               <b-nav-item href="#home2"  >HOME2 </b-nav-item>
               <!-- <b-nav-item href="#home"  >HOME </b-nav-item> -->
               <b-nav-item href="#service">SERVICE </b-nav-item>
               <b-nav-item href="#team" >TEAM </b-nav-item>
               <b-nav-item href="#contact" >CONTACT </b-nav-item>
             </b-nav>
-          <!-- </b-collapse> -->
+          </b-collapse>
         </b-navbar>
       </div>
       <!-- view(scrollyspy) pages -->

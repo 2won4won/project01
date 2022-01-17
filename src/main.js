@@ -11,7 +11,10 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 // Make BootstrapVue available throughout your project
-Vue.use(BootstrapVue)
+// breakponit xxl 추가
+Vue.use(BootstrapVue, {
+  breakpoints: ['xs', 'sm', 'md', 'lg', 'xl', 'xxl']
+})
 // Optionally install the BootstrapVue icon components plugin
 Vue.use(IconsPlugin)
 

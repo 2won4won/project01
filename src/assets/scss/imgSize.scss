@@ -27,11 +27,11 @@
   @media (max-width:575px) { width: 60%}  
 }
 
-// .imgBox2 {
-//   // width: 14rem;
-//   // height: 14rem;
-//   object-fit: contain;
-//   @media (max-width:575px) { width: 6rem; height: 6rem; text-align: end; }
-//   @media (min-width:576px) and (max-width:767px) { width: 9rem; height:9rem; text-align: end;}
-//   @media (min-width:768px) and (max-width:991px) { width: 11rem; height:11rem; text-align: end;}
-// }  
+.imgBox2 {
+  // width: 14rem;
+  // height: 14rem;
+  object-fit: contain;
+  @media (max-width:575px) { width: 6rem; height: 6rem; text-align: end; }
+  @media (min-width:576px) and (max-width:767px) { width: 9rem; height:9rem; text-align: end;}
+  @media (min-width:768px) and (max-width:991px) { width: 11rem; height:11rem; text-align: end;}
+}  
