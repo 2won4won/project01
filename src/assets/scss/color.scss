@@ -5,101 +5,101 @@ $a_active: rgb(41,125,255);
 $a_hover: rgb(159,155,172);
 $title: 1.5rem;
 $subTitle: 1.3rem;
-$contents: 1.1rem;
+$contents: 1.1rem;;
+$a_font:1.6rem;
+$web_font:1.5rem;
+$active_font:1.7rem;
+$hover_before: 1.2rem;
+$hover_font: 1.3rem;
 $t1: rgb(255,255,255);
 $t2: rgb(0,91,235);
+$bgBtn:rgb(89,87,93);
 
-//font size & color
-.titleTop{
-  font-size: 2.2rem;
-  font-weight: bolder;
+//image sizing
+.imgSize100 {
+  // width: 50vw;
+  width: 100%;
 }
-.title {
-  font-size: 2.1rem;
-  padding-bottom: 1.6rem;
-  font-weight: bold;
+.imgSize80 {
+  width: 80%;
 }
-.subTitle {
-  font-size: 1.7rem;
-  // padding-bottom: 1rem;
+.imgSize60 {
+  width: 60%;
 }
-.contents {
-  font-size: 1.5rem;
-  // margin-bottom: 0;
+.imgSize40 {
+  width: 40%;
 }
-.blue {
-  color: rgb(0,91,235);
-  font-weight: bolder;
+//원본
+//이미지의 크기가 동일
+.piconBox {
+  width: 10%;
+  // height:5vh;
 }
-// 전체 layout을 margin %로 제어
+// .wiconBox {
+//   width: 7vw;
+// }
+// 전체 layout에서 제어
 .box {
-  margin: 3rem 10% 1.5rem 10%;
-  padding: 3rem;
-  border-radius: 1rem;
-    @media (max-width:575px) { 
-      margin: 0; 
-      padding-left: 8%;
-      padding-right: 8%;
-      border-radius: 0; }  
-    @media (min-width:576px) and (max-width:767px ) { 
-      margin-left: 8% ;
-      margin-right: 8%;  } 
 }
 .box:nth-child(odd) {
-  background-color: rgb(36,39,46); 
+  // background-color: rgb(36,39,46); 
+  background-color: rgb(53,56,59); 
 }
 .box:nth-child(even) {
-  background-color: rgb(42,45,54); 
+  background-color: rgb(89,87,93); 
 }
-
-//pointer
-.pointer {  font-size: 1rem; }
-.pointSize {  width: 4rem; }
-.pBox {
-  margin-top: -3rem;
-    @media (max-width:575px) {  margin-top: 1rem;}
-  // @media (min-width:576px) and (max-width:767px) {  margin-top: -2rem; }
-  // @media (min-width:768px) and (max-width: 991px) {  margin-top: -2rem; }
-  // @media (min-width:992px) and (max-width: 1199px) {  margin-top: -2rem; }
-}
-
 
 //image
 //imageBox 에 크기 지정->변경/ img 에는 %로 지정
-// .imgSize1 {  width: 50%; }
-// .imgBox2 {
-//   width: 14rem;
-//   height: 14rem;
-//   object-fit: contain;
-//   @media (max-width:575px) { width: 6rem; height: 6rem; text-align: end; }
-//   @media (min-width:576px) and (max-width:767px) { width: 9rem; height:9rem; text-align: end;}
-//   @media (min-width:768px) and (max-width:991px) { width: 11rem; height:11rem; text-align: end;}
-// }  
-// .imgSize2 {
-//   width: 100%;
-//   height: 100%;
-// }
-.imgBox3 {
-  width: 20rem;
-  height: 20rem;
-  object-fit: contain;
-  @media (max-width:575px) { 
-    width: 15rem;
-    height: 15rem;
+//titleBox의 font size & color
+.titleBox {
+  font-size: 2.2rem;
+  font-weight: bolder;
+  color: $a;
+  padding: 1rem;
+  border: solid 0.2rem rgb(111, 233, 186);
+}
+.imgBox {
+  border: solid 0.2rem wheat;
+}
+.pointerbox {
+  border: solid 0.2rem rgb(240, 141, 101);
+}
+.footBox {
+  border: solid 0.2rem rgb(240, 141, 101);
+  padding: 2rem;
+  margin-bottom: 3rem;
+}
+//icon 아래 글 간격띄우기
+.pBox {
+  padding-top: 0.3rem;
+}
+//전역에서만 적용가능
+.modal-body {
+  background-color: mintcream;
+}
+
+.stitle {
+  font-size: 2rem;
+}
+.footFont {
+  font-size: 1rem;
+  color: $a;
+}
+ //a css
+a {
+  text-decoration-line: none;
+  color: $a;
+  font-weight: bold;
+  font-size: $hover_before;
+ 
+  &:hover {
+    color: $a_hover ;
+    font-size: $hover_font;
+    // text-shadow: 0.1rem 0.1rem $a; 
+    text-shadow: 0.2rem 0.2rem black; 
+    // text-shadow: 0.2rem 0.2rem rgb(89,87,93); 
   }
 }  
-.imgSize3 {
-  @media (max-width:575px) { width: 55%; height: 55%;   }
-  @media (min-width:576px) and (max-width:767px) { width: 32%; height: 32%;}
-  @media (min-width:768px) and (max-width: 991px) { width: 40%; height: 40%; }
-  @media (min-width:992px) and (max-width: 1199px) { width: 37%; height: 37%; }
-  @media (min-width:1200px) { width: 30%; height: 30%; }
-}
-#if {
-  text-align: center;
-  @media (max-width:575px) {   }
-  @media (min-width:576px) and (max-width:767px) { width: 70%; height: 22vh}
-  @media (min-width:768px) and (max-width: 991px) { width: 80%; height: 27vh; }
-  @media (min-width:992px) and (max-width: 1199px) { width: 80%; height: 30vh; }
-  @media (min-width:1200px) { width: 70%; height: 32vh; }
-}
+
+ 

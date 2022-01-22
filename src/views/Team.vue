@@ -1,11 +1,102 @@
 <template>
   <div id="team">
-   tesm
+    <div class="box">
+      <div class="titleBox"> TEAM</div>
+      <div class=" imgBox">
+  <div>
+    <button class="shrink-border">https://wonhago.com</button>
+
+  </div>
+ </div>
+    </div>
+    
   </div>
 </template>
-<style lang="scss">
-#team {
-  background-color: rgb(226, 174, 62);
-  height: 100vh;
+
+<script>
+export default {
+
 }
+</script>
+
+<style>
+#team {
+  /* background-color: beige; */
+  height: 100%;
+}
+container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+}
+
+button {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+button {
+  position: relative;
+  border: none;
+  font-size: 18px;
+  transition: color 0.5s, transform 0.2s, background-color 0.2s;
+  outline: none;
+  border-radius: 3px;
+  margin: 0 10px;
+  padding: 23px 33px;
+  border: 3px solid transparent;
+}
+button:active {
+  transform: translateY(3px);
+}
+button::after, button::before {
+  border-radius: 3px;
+}
+
+.shrink-border {
+  background-color: transparent;
+  color: #1b1b20;
+}
+.shrink-border:hover {
+  background-color: transparent;
+  box-shadow: none;
+  color: #e6e6e6;
+}
+.shrink-border::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 3px solid #1b1b20;
+  transition: opacity 0.3s, border 0.3s;
+}
+.shrink-border:hover::before {
+  opacity: 0;
+}
+.shrink-border::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: 3px solid #e6e6e6;
+  opacity: 0;
+  z-index: -1;
+  transform: scaleX(1.1) scaleY(1.3);
+  transition: transform 0.3s, opacity 0.3s;
+}
+.shrink-border:hover::after {
+  opacity: 1;
+  transform: scaleX(1) scaleY(1);
+}
+
+
+
 </style>

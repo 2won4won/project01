@@ -1,8 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Header from '../components/Header.vue'
-// import Home from '../views/Home.vue'
-import Home2 from '../views/Home2.vue'
+import Home from '../views/Home.vue'
 import Team from '../views/Team.vue'
 import Contact from '../views/Contact.vue'
 import Service from '../views/Service.vue'
@@ -15,15 +14,10 @@ const routes = [
     name: 'Header',
     component: Header
   },
-  // {
-  //   path: '/home',
-  //   name: 'Home',
-  //   component: Home
-  // },
   {
-    path: '/home2',
-    name: 'Home2',
-    component: Home2
+    path: '/home',
+    name: 'Home',
+    component: Home
   },
   {
     path: '/contact',
