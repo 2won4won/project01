@@ -87,11 +87,6 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-#oneKor {
-  // background-color: antiquewhite;
-  // padding: 0.5rem, 2rem;
-}
-
 
 </style>
 

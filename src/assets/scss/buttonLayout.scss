@@ -1,0 +1,46 @@
+// //버튼 기본 css 제거
+// .btn-secondary {
+//   color: $a;
+//   font-weight: bold;
+//   font-size:  $hover_before;
+//   //버튼 바탕색 제거
+//   background-color: transparent;
+//   //border 제거
+//   border: 0;
+//   outline: 0;
+// }
+// //클릭 후 css 제거
+// .btn-secondary:focus{ 	
+//     border: none !important;
+//     outline:none !important; 
+//     box-shadow:none !important; 
+//     background-color: transparent !important;
+// }
+// .btn-secondary:hover{ 	
+//    color: $a_hover ;
+//    font-size: $hover_font;
+//    font-weight: bold;
+//    text-shadow: 0.2rem 0.2rem black; 
+//    background-color: transparent !important;
+// }
+// //모달 내 버튼 크기(전체길이) & 색상 지정
+// .modalBtn {
+//   width: 100%;
+//   min-height: 4vh;
+//   background-color: $bgBtn !important;
+//   border-block-style: none;
+//   color: $a;
+//   margin-top: 0;
+//   padding: 0;
+// }
+// .btn.modalBtn:hover {
+//   background-color: $a_hover!important; 
+//   color: $bg !important;
+// }
+// .btn-block {
+//   margin: 0 !important;
+// }
+// #modalContents {
+//   padding-left:  0.5rem;
+//   padding-right:  0.5rem;
+// }

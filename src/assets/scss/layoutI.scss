@@ -11,15 +11,16 @@
   }  
   //전체 layout
   .box {
+    border: solid 0.3rem red;
     @media (max-width:575px) { 
       border-radius: none;  
-      margin: 2rem 1.5rem;
-      padding: 2rem;
+      margin: 1rem 1.5rem;
+      padding:1rem;
     }
     @media (min-width:576px)  { 
       border-radius: 1rem;
-      margin: 2rem 4rem;
-      padding: 2rem;
+      margin: 1rem 4rem;
+      padding: 0 4rem 0 4rem;
     }
   }
 

@@ -1,0 +1,41 @@
+//nav align
+#nav {
+  @media (max-width:575px) { 
+    
+  }
+  @media (min-width:576px)  { 
+    display: flex;
+    justify-content: space-around;
+  }
+}
+//modal
+@media (min-width:992px) { 
+  .modal-lg { 
+    max-width: auto !important;
+  }
+}  
+@media (max-width:575px) { 
+  modal-dialog { 
+    max-width: auto !important;
+  }
+} 
+//전역에서만 적용가능
+.modal-body {
+  background-color: mintcream;
+}
+#iframe {
+  @media (max-width:575px) { width: 50%; height: 40% }  
+  @media (min-width:576px) and (max-width:767px ) {width: 47%; height: 40%  } 
+  @media (min-width:768px) and (max-width:991px ) {width: 50%; height: 50%  }  
+  @media (min-width:992px) and (max-width:1199px ) {width: 75%; height: 60%  }  
+  @media (min-width:1200px) and (max-width:1399px ){ }  
+  @media (min-width:1400px) { 
+    html { font-size: 90%;}
+  } 
+}
+.imgSize100 {
+  @media (max-width:575px) { width: 200%;  }  
+}
+.b-sidebar > .b-sidebar-body{
+  background-color: $sideBar;
+}

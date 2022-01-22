@@ -41,13 +41,13 @@ $bgBtn:rgb(89,87,93);
 // 전체 layout에서 제어
 .box {
 }
-.box:nth-child(odd) {
-  // background-color: rgb(36,39,46); 
-  background-color: rgb(53,56,59); 
-}
-.box:nth-child(even) {
-  background-color: rgb(89,87,93); 
-}
+// .box:nth-child(odd) {
+//   // background-color: rgb(36,39,46); 
+//   background-color: rgb(53,56,59); 
+// }
+// .box:nth-child(even) {
+//   background-color: rgb(89,87,93); 
+// }
 
 //image
 //imageBox 에 크기 지정->변경/ img 에는 %로 지정
@@ -65,27 +65,27 @@ $bgBtn:rgb(89,87,93);
 .pointerbox {
   border: solid 0.2rem rgb(240, 141, 101);
 }
-.footBox {
-  border: solid 0.2rem rgb(240, 141, 101);
-  padding: 2rem;
-  margin-bottom: 3rem;
-}
+// .footBox {
+//   border: solid 0.2rem rgb(240, 141, 101);
+//   padding: 2rem;
+//   margin-bottom: 3rem;
+// }
 //icon 아래 글 간격띄우기
-.pBox {
-  padding-top: 0.3rem;
-}
+// .pBox {
+//   padding-top: 0.3rem;
+// }
 //전역에서만 적용가능
 .modal-body {
   background-color: mintcream;
 }
 
-.stitle {
-  font-size: 2rem;
-}
-.footFont {
-  font-size: 1rem;
-  color: $a;
-}
+// .stitle {
+//   font-size: 2rem;
+// }
+// .footFont {
+//   font-size: 1rem;
+//   color: $a;
+// }
  //a css
 a {
   text-decoration-line: none;

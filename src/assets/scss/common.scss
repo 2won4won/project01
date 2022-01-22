@@ -1,0 +1,82 @@
+$bg_nav: rgb(28, 28, 28);
+$bg: rgb(21,25,36);
+$a: rgb(254,254,254);
+$a_active: rgb(41,125,255);
+$a_hover: rgb(159,155,172);
+$a_font:1.6rem;
+$web_font:1.7rem;
+$active_font:1.7rem;
+$hover_before: 1.2rem;
+$hover_font: 1.3rem;
+$t1: rgb(255,255,255);
+$t2: rgb(0,91,235);
+$bgBtn:rgb(89,87,93);
+$sideBar:rgb(53,56,59);
+
+//
+.box {
+  // border: solid 0.3rem red;
+  // margin: 0 7rem 0 7rem;
+  width: 100vw;
+  height: 150%;
+}
+
+//image sizing
+.imgSize100 {
+  width: 100%;
+}
+// .imgSize100 {
+//   width: 100%;
+// }
+.imgSize110 {
+  height: 110%;
+}
+.iconSize {
+  width: 15%;
+}
+.iconSize2 {
+  width: 13vw;
+}
+.iconSize3 {
+  width: 11vw;
+}
+.outer {
+  position: relative;
+}  
+.inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -25%);
+}
+.innerB {
+  position: absolute;
+  top: 85%;
+  left: 90%;
+  transform: translate( -60%, -50%);
+}
+.innerC {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate( -50%, 0%);
+}
+.alignC {
+  display: flex;
+  justify-content: space-around;
+}
+//a 
+a {
+  text-decoration-line: none;
+  color: $a;
+  font-weight: bold;
+  font-size: $hover_before;
+ 
+  &:hover {
+    color: $a_hover ;
+    font-size: $hover_font;
+    // text-shadow: 0.1rem 0.1rem $a; 
+    text-shadow: 0.2rem 0.2rem black; 
+    // text-shadow: 0.2rem 0.2rem rgb(89,87,93); 
+  }
+}  

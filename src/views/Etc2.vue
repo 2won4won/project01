@@ -1,14 +1,18 @@
 <template>
-  <div id="service">
+  <div id="etc2">
     <div class="box" id="halfBox">
-      <div class="imgBox" id="out">
-        <div id="inn">
+      <div class="imgBox">
+        <div>
           <b-button class="web" href="https://test.wonhago.com" 
                     target="_blank"
           > 
               https://wonhago.com 
           </b-button>
-        </div>
+          <!-- <button class="web"> 
+             <a href="http://test.wonhago.com" target="_blank">
+            https://test.wonhago.com </a> 
+        </button>  -->
+      </div>
       </div>
     </div>
   </div>
@@ -16,23 +20,14 @@
 
 <script>
 export default {
-  name:'service',
+  name:'etc2',
 }
 </script>
 
  <style lang="scss" scoped> 
- //server 화면 전체의 높이 지정, imgBox 중앙정렬
  #halfBox {
    height: 50vh;
-   position: relative;
  }
- #inn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 .btn {
   position: relative;
   border: none;
@@ -42,7 +37,7 @@ export default {
   border-radius: 0.2rem ;
   margin: 0 1rem;
   padding:1.5rem 5rem;
-  border: 0.2rem  solid  $bgBtn;
+  border: 0.2rem  solid $bg;
   // border: 0.2rem  solid transparent;
 }
 .btn:active {
@@ -85,7 +80,7 @@ export default {
   width: 100%;
   height: 100%;
   background-color: transparent;
-  border: 0.2rem  solid $bgBtn;
+  border: 0.2rem  solid #e6e6e6;
   opacity: 0;
   z-index: -1;
   transform: scaleX(1.1) scaleY(1.3);

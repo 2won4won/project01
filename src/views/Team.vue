@@ -1,28 +1,21 @@
 <template>
   <div id="team">
     <div class="box">
-      <div class="titleBox"> TEAM</div>
-      <div class=" imgBox">
-  <div>
-    <button class="shrink-border">https://wonhago.com</button>
-
-  </div>
- </div>
-    </div>
-    
-  </div>
+    </div>  
+  </div> 
 </template>
 
 <script>
 export default {
-
+  name: "Team",
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+
 #team {
   /* background-color: beige; */
-  height: 100%;
+  // height: 100vh;
 }
 container {
   display: flex;
@@ -96,7 +89,4 @@ button::after, button::before {
   opacity: 1;
   transform: scaleX(1) scaleY(1);
 }
-
-
-
 </style>

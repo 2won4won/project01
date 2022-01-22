@@ -1,165 +1,156 @@
 <template>
   <div id="home">
-    <!-- home box -->
     <div class="box" id="welcome">
-      <!-- title Box -->
-      <div class="titleBox"> WELCOME TO WONHAGO </div>
-      <!-- imgSize: image size 크기조절 -->
       <div class="imgBox">
-        <b-img :src="home01" class="imgSize100 "></b-img>
-      </div>  
-      <!-- text-end  소속box 체크 -->
-      <div class="pointerbox "> 
-        <div class="hoverBox1 ">
-          <a href="#pointarea1" >
-              <div class="imgbox">
-              <b-img right :src="point1" class="piconBox"> </b-img>
-              </div>
-              <p class=" pBox"> whitepaper </p>
-          </a>  
+        <div class="outer">
+          <b-img :src="home01" class="imgSize100"></b-img>
+          <!-- <div class="innerB" > -->
+            <a href="#stayUp" class="iconBox ">
+              <b-img :src="icon01" class="iconSize innerB"> </b-img>
+            </a>  
         </div>
-      </div>  
-    </div>  
+      </div>
+    </div> 
     <div class="box" id="play">
-      <div class="titleBox"> PLAY TO EARN </div>
       <div class="imgBox">
         <b-img :src="home02" class="imgSize100"></b-img>
       </div>  
-    </div>  
-    <div class="box" id="claim">
-      <div class="titleBox"> CLAIM YOUR REWARD </div>
+    </div> 
+     <div class="box" id="claim">
       <div class="imgBox">
-        <b-img :src="home03" class="imgSize40"></b-img>
-      </div> 
-      <div class="pointerbox "> 
-        <div class="hoverBox1">
-          <a href="#pointarea2" >
-              <b-img right :src="point2" class="piconBox"> </b-img>
-              <p class="pBox"> Service </p>
-          </a>  
+        <div class="outer">
+          <b-img :src="home03" class="imgSize100"></b-img>
+          <!-- <div class="innerB" > -->
+            <a href="#service" class="iconBox ">
+              <b-img :src="icon02" class="iconSize innerB"> </b-img>
+            </a>  
+          <!-- </div> -->
         </div>
       </div>  
-    </div>  
-    <div class="box" id="how">
-      <div class="titleBox"> HOW TO WORK </div>
-      <div class="imgBox">
-        <b-img :src="home04" class="imgSize60"></b-img>
-      </div> 
-    </div>  
-    <div class="box" id="wont">
-      <div class="titleBox"> WONT ECONOMICS </div>
+    </div> 
+    <div class="box " id="how">
+       <div class="imgBox ">
+         <div class="outer">
+            <b-img :src="home04" class="imgSize100"> 
+            </b-img>
+          <div class="inner ">
+            <iframe width="90%" height="240vh" 
+                    id="iframe"
+                    src="https://www.youtube.com/embed/hhoP2kZ33K8" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+            </iframe>
+          </div> 
+         </div> 
+       </div>  
+    </div> 
+    <div class="box" id="econmics">
       <div class="imgBox">
         <b-img :src="home05" class="imgSize100"></b-img>
-      </div> 
-    </div>  
-    <div class="box" id="dis">
-      <div class="titleBox"> WONT DISTRIBUTION </div>
+      </div>  
+    </div> 
+    <div class="box" id="distribution">
       <div class="imgBox">
         <b-img :src="home06" class="imgSize100"></b-img>
-      </div> 
-    </div>  
-    <div class="box" id="road">
-      <div class="titleBox"> ROADMAP </div>
+      </div>  
+    </div> 
+    <div class="box" id="roadMap">
       <div class="imgBox">
-        <b-img :src="home08" class="imgSize100"></b-img>
-      </div> 
-    </div>  
-    <div class="box" id="pointarea1">
-      <div class="titleBox"> STAY UP TO DATE </div>
-      <div class="imgBox d-flex justify-content-around" id="wBox">
-          <!-- <b-img :src="home09" class="imgSize100"></b-img> -->
-          <!-- <a href='filepath'downlaod> -->
-          <!-- <a href='filepath'downlaod="저장된후 이름변경"> -->
-         <div id="w1" class="wiconBox">
-            <a href="" download >
-              <!-- <img src="/images/myw3schoolsimage.jpg"> -->
-              <b-img :src="point1" ></b-img>
-              <div  class="pBox"> Whitepaper(eng)</div>
-            </a>  
+        <b-img :src="home07" class="imgSize100"></b-img>
+      </div>  
+    </div> 
+    <div class="box" id="stayUp">
+      <div class="imgBox">
+        <div class="outer">
+          <b-img :src="home08" class="imgSize100"></b-img>
+          <div class="innerC">
+            <div class="alignC">
+              <div id="w1" class="wiconBox">
+                <a href="" download >
+                  <!-- <img src="/images/myw3schoolsimage.jpg"> -->
+                  <b-img :src="icon03" class="iconSize2" ></b-img>
+                </a>  
+              </div>
+              <div id="w1" class="wiconBox">
+                <a href="" download >
+                  <!-- <img src="/images/myw3schoolsimage.jpg"> -->
+                  <b-img :src="icon04" class="iconSize2" ></b-img>
+                </a>  
+              </div>
+              <div id="w3">
+                <b-button  v-b-modal.ms1 >
+                  <b-img :src="icon05" class="iconSize2 wiconBox"></b-img>
+                </b-button>
+                <b-modal    id="ms1" 
+                            ref="mymodal"
+                            scrollable 
+                            fade
+                            hide-header-close
+                            :title="title1"
+                > 
+                    <div id="modalContents" > <OnePageEng /> </div>
+                    <template #modal-footer >
+                          <!-- block: 전체 길이 -->
+                        <b-button class="mt-3 modalBtn" block variant="light" @click="hideModal"> 닫기 </b-button>     
+                    </template>      
+                </b-modal>
+              </div>
+              <div id="w4"> 
+                <b-button  v-b-modal.ms2  >
+                  <b-img :src="icon06" class="iconSize2 wiconBox"></b-img>
+                </b-button>  
+                  <!-- ref=hide 연결 -->
+                  <!-- 모달창 크기는 @media에서 확인 -->
+                  <b-modal id="ms2" 
+                            ref="mymodal"
+                            scrollable 
+                            fade
+                            hide-header-close
+                            :title="title2"
+                  > 
+                    <div id="modalContents" > <OnePageKor /> </div>
+                    <template #modal-footer >
+                          <!-- block: 전체 길이 -->
+                        <b-button class="mt-3 modalBtn" block variant="light" @click="hideModal"> 닫기 </b-button>     
+                    </template>      
+                  </b-modal>
+              </div> 
+            </div>
+          </div>
         </div>
-        <div id="w2">
-          <a href="" download > 
-            <b-img :src="point1" class="wiconBox"></b-img>
-            <div class="pBox"> Whitepaper(kor)</div>
-          </a>  
-        </div>
-        <div id="w3">
-          <b-button  v-b-modal.ms1 >
-          <!-- <a  v-b-modal.ms1  > -->
-            <b-img :src="point1" class="wiconBox"></b-img>
-            <div  class="pBox"> Onepaper(eng)</div>
-          </b-button>
-             <b-modal id="ms1" 
-                      ref="mymodal"
-                      scrollable 
-                      fade
-                      size="lg"
-                      modal-class="modalSize"
-                      hide-header-close
-                      :title="title"
-            > 
-            <div id="modalContents" > <OnePageEng /> </div>
-            <template #modal-footer >
-                  <!-- block: 전체 길이 -->
-                <b-button class="mt-3 modalBtn" block variant="light" @click="hideModal"> 닫기 </b-button>     
-            </template>      
-            </b-modal>
-        </div>
-    
-        <div id="w4"> 
-          <b-button  v-b-modal.ms2  >
-            <b-img :src="point1" class="wiconBox"></b-img>
-            <div class="pBox"> Onepaper(kor)</div>
-          </b-button>  
-            <!-- ref=hide 연결 -->
-            <!-- 모달창 크기는 @media에서 확인 -->
-             <b-modal id="ms2" 
-                      ref="mymodal"
-                      scrollable 
-                      fade
-                      size="lg"
-                      modal-class="modalSize"
-                      hide-header-close
-                      :title="title"
-            > 
-            <div id="modalContents" > <OnePageKor /> </div>
-            <template #modal-footer >
-                  <!-- block: 전체 길이 -->
-                <b-button class="mt-3 modalBtn" block variant="light" @click="hideModal"> 닫기 </b-button>     
-            </template>      
-            </b-modal>
-        </div>
-      </div>
-    </div>
+      </div>  
+    </div> 
   </div>
 </template>
 
 <script>
-// import txt from "raw-loader!./assets/onePageEng.txt";
 import OnePageKor from './OnePageKor.vue';
 import OnePageEng from './OnePageEng.vue';
 
 export default {
-  name: 'Home',
+  name: "Home",
   components: {
-    OnePageKor, OnePageEng
+    OnePageKor, OnePageEng,
   },
   data() {
     return {
-      // txt: txt,
-      home01: require ('../assets/image/home01.png'),
-      home02: require ('../assets/image/home02.png'),
-      home03: require ('../assets/image/home03.png'),
-      home04: require ('../assets/image/home04.png'),
-      home05: require ('../assets/image/home05.png'),
-      home06: require ('../assets/image/home06.png'),
-      home08: require ('../assets/image/home08.png'),
-      home09: require ('../assets/image/home09.png'),
-      point1: require ('../assets/images/point1.png'),
-      point2: require ('../assets/images/point2.png'),
-      
-      // imgPer: require ('../assets/images/imgPer.png')
-      title: "WONHAGO(KOR)",
+        home01: require ('../assets/body/home01.png'),
+        home02: require ('../assets/body/home02.png'),
+        home03: require ('../assets/body/home03.png'),
+        home04: require ('../assets/body/home04.png'),
+        home05: require ('../assets/body/home05.png'),
+        home06: require ('../assets/body/home06.png'),
+        home07: require ('../assets/body/home07.png'),
+        home08: require ('../assets/body/home08.png'),
+        icon01: require ('../assets/icons/icon01.png'),
+        icon02: require ('../assets/icons/icon02.png'),
+        icon03: require ('../assets/icons/icon03.png'),
+        icon04: require ('../assets/icons/icon04.png'),
+        icon05: require ('../assets/icons/icon05.png'),
+        icon06: require ('../assets/icons/icon06.png'),
+        title1: "WONHAGO(ENG)",
+        title2: "WONHAGO(KOR)",
     }
   },
   methods: {
@@ -196,37 +187,26 @@ export default {
    text-shadow: 0.2rem 0.2rem black; 
    background-color: transparent !important;
 }
-//hover 기능 변경필요
-//img 확대
-.hoverBox1 {
-  // width: 20%;
-  margin: 0 0 0 auto;
-  overflow: hidden;
-  transition: all 0.5s linear 
-}
-
-.hoverBox1:hover  {
-  // transform: rotateY( 180deg );
-  //왼쪽으로 이동 하면서 확대
-  transform: translateX( -6rem ) scale(1.1);
-}
-//whiteppaer Box 내 icon 정렬
-// #wBox {
-//   padding: 1rem 10rem;
-// }
+//모달 내 버튼 크기(전체길이) & 색상 지정
 .modalBtn {
   width: 100%;
   min-height: 4vh;
   background-color: $bgBtn !important;
   border-block-style: none;
+  color: $a;
   margin-top: 0;
   padding: 0;
+}
+.btn.modalBtn:hover {
+  background-color: $a_hover!important; 
+  color: $bg !important;
 }
 .btn-block {
   margin: 0 !important;
 }
 #modalContents {
-  padding: 1rem 1.5rem ;
+  padding-left:  0.5rem;
+  padding-right:  0.5rem;
 }
+
 </style>
-  
