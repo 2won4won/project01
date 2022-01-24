@@ -4,8 +4,7 @@
       <div class="imgBox">
         <div class="outer">
           <b-img :src="home01" class="imgSize100"></b-img>
-          <!-- <div class="innerB" > -->
-            <a href="#stayUp" class="iconBox ">
+            <a href="#stayUp" class="iconBox1 ">
               <b-img :src="icon01" class="iconSize innerB"> </b-img>
             </a>  
         </div>
@@ -21,7 +20,7 @@
         <div class="outer">
           <b-img :src="home03" class="imgSize100"></b-img>
           <!-- <div class="innerB" > -->
-            <a href="#service" class="iconBox ">
+            <a href="#service" class="iconBox1 ">
               <b-img :src="icon02" class="iconSize innerB"> </b-img>
             </a>  
           <!-- </div> -->
@@ -66,19 +65,19 @@
           <b-img :src="home08" class="imgSize100"></b-img>
           <div class="innerC">
             <div class="alignC">
-              <div id="w1" class="wiconBox">
+              <div id="w1" class="iconBox2">
                 <a href="" download >
                   <!-- <img src="/images/myw3schoolsimage.jpg"> -->
                   <b-img :src="icon03" class="iconSize2" ></b-img>
                 </a>  
               </div>
-              <div id="w1" class="wiconBox">
+              <div id="w1" class="iconBox2">
                 <a href="" download >
                   <!-- <img src="/images/myw3schoolsimage.jpg"> -->
                   <b-img :src="icon04" class="iconSize2" ></b-img>
                 </a>  
               </div>
-              <div id="w3">
+              <div id="w3" class="iconBox2">
                 <b-button  v-b-modal.ms1 >
                   <b-img :src="icon05" class="iconSize2 wiconBox"></b-img>
                 </b-button>
@@ -96,7 +95,7 @@
                     </template>      
                 </b-modal>
               </div>
-              <div id="w4"> 
+              <div id="w4" class="iconBox2"> 
                 <b-button  v-b-modal.ms2  >
                   <b-img :src="icon06" class="iconSize2 wiconBox"></b-img>
                 </b-button>  

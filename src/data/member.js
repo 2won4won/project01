@@ -1,0 +1,41 @@
+export default {
+  member: [
+      { id: 1,
+        picture: require (`@/assets/team/01.jpeg`),
+        // picture: '@/../public/card2.jpeg',
+        // picture: '../assets/1.jpeg',
+        // picture: "require('../assets/1.jpeg')",
+        part: 'CEO' ,
+        name:  'MoonSung Choi',
+        career: [
+                  { career1: '한국외국어대학교 영어과' }  ,  
+                  { career2: '前 (주)이즈포유 CEO' }  ,  
+                  { career3: '現 중기청 ICT 평가위원 ' }  ,  
+                  { career4: 'Planning Strategy & Marketing' }  ,  
+                ],
+      },
+      { id: 2,
+        picture: require (`@/assets/team/02.jpeg`),
+        part: 'Blockchain Architect' ,
+        name:  'Ethan HeungJin Kim',
+        career: [
+                  { career1: 'CTO at BaaS Store(YCT Token)' }  ,  
+                  { career2: 'CTO at ScoutChain' }  ,  
+                  { career3: 'Stock Trading System at I-Robo' }  ,  
+                  { career4: 'Network Security System at Anchovy Ph.D in Information, Communication, Korea Univ. BA, MA in Physics, Seoul National Univ.' }  ,  
+                ],
+      },
+      { id: 3,
+        picture: require (`@/assets/team/03.jpeg`),
+        part: 'CMO' ,
+        name:  'Patrick Jo',
+        career: [
+                  { career1: 'CGO at Blockchain Marketing Asia' }  ,  
+                  { career2: 'CMO at BaaS Store(YCT Token)' }  ,  
+                  { career3: 'CMO at Jeluria Korea Consulting(ARDR, IGIS)' }  ,  
+                  { career4: 'BD at ScoutChain' }  ,  
+                  { career5: 'Global Marketing at LG Electronics' }  ,  
+                ],
+      },
+  ]
+}

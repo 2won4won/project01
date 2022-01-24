@@ -1,0 +1,17 @@
+.iconBox1,.iconBox2, iconBox3{
+  // width: 20%;
+  margin: 0 0 0 auto;
+  overflow: hidden;
+  transition: all 0.5s linear 
+}
+.iconBox1:hover {
+  // transform: translateX( -6rem ) scale(1.1);
+  opacity: 0.4;
+  // -moz-box-shadow: 0 0 10px #ccc;
+  // -webkit-box-shadow: 0 0 10px #ccc;
+  // box-shadow: 0 0 10px #ccc;
+}
+.iconBox2:hover {
+  opacity: 0.4;
+  transform: rotateY( 90deg )
+}

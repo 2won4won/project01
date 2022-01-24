@@ -97,7 +97,11 @@ export default {
 <style lang="scss">
     // view 화면 배경색과 글자색 제어
     #list {
-      background-color: $bg;
+      // background-color: $bg;
+      // width: 100vw;
+      // height: 100vh;
+      // max-width: 100%;
+      // max-height: 100%;
     }
   #navBox {
     padding: 0 !important;
@@ -131,8 +135,8 @@ export default {
      display: block;
      left: auto;
      width: 0;
-     border-bottom: solid 0.3rem $t2;
-     border-bottom-width: 0.2rem;
+     border-bottom: solid 0.1rem $a_hover;
+     border-bottom-width: 0.1rem;
      transition: 0.2s all ;
      border-image-slice: 1;
    }
@@ -142,8 +146,8 @@ export default {
    }  
   //  hover 밑줄 길이 조절
    a.nav-link:hover::after {
-      width: 50%;
-      left: 25%;
+      width: 40%;
+      left: 30%;
     }
    
 </style>
