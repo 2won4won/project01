@@ -1,7 +1,8 @@
 //nav align
 #nav {
   @media (max-width:575px) { 
-    
+    background-color:$t1;
+    padding-right: 1rem;
   }
   @media (min-width:576px)  { 
     display: flex;
@@ -12,7 +13,6 @@
 @media (min-width:992px) { 
   .modal-lg { 
     max-height: auto !important;
-    // max-width: auto !important;
   }
 }  
 @media (max-width:575px) { 
@@ -24,6 +24,10 @@
 .modal-body {
   background-color: mintcream;
 }
+header.modal-header {
+  padding: 0.5rem 1rem;
+}
+
 #iframe {
   @media (max-width:575px) { width: 50%; height: 40% }  
   @media (min-width:576px) and (max-width:767px ) {width: 47%; height: 40%  } 
@@ -32,6 +36,80 @@
   @media (min-width:1200px) and (max-width:1399px ){ width: 30vw; height: 40vh}  
   @media (min-width:1400px) { width: 30vw; height: 40vh } 
 }
-.b-sidebar > .b-sidebar-body{
-  background-color: $sideBar;
+#serviceBox {
+  @media (max-width:575px) { 
+    width: 100vw;
+    height: 40vh;
+  }
+  @media (min-width:576px) and (max-width:1199px ) { 
+    width: 100vw;
+    height: 50vh;
+  }
+  @media (min-width:1200px) { 
+    width: 100vw;
+    height: 100vh;
+  }
+}
+@media (max-width:575px) {
+  // icon size
+  #logoIcon { width: 30%;}
+  #listIcon { width: 2.5rem ;}
+  //sidebar 내 list 줄간격
+  li.nav-item {
+    padding: 1.5rem;
+  }
+  #btn {
+    background-color: $a_active;
+    width: 40% !important;
+    height: 2rem !important;
+  }
+  .b-sidebar > .b-sidebar-body{
+    background-color: $sideBar;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .innerD {
+    position: absolute;
+    top: 80% !important;
+    left: 90%;
+    transform: translate( -50%, -50%);
+  }
+  .inn {
+    left: 70% !important;
+  }
+//card css: 전체 넓이 사용하기 위해서
+  // #smContainer {
+  //   padding-left: 0;
+  // }
+  // card 2개 올라올기 위해서
+  // .carouselBox {
+  //   width: 100vw!important;
+  //   padding-left: 0.3rem !important;
+  //   padding-right: 0.3rem !important;
+  //   margin-left: 0;
+  // }
+  // .container-fluid {
+  //   padding-right: 0 !important;
+  // }
+
+}
+.carouselBox {
+  @media (min-width:576px) and (max-width:991px ) { 
+    width: 100% !important; 
+    padding-left: 1rem !important; 
+    padding-right: 1rem !important;
+  }  
+  @media (min-width:992px) and (max-width:1199px ){
+    width: 95% !important;  
+  }
+  @media (min-width:1200px)  {
+    width: 90% !important;  
+  }
+}
+.teamCard {
+  @media (min-width:1400px)  {
+    height: 30rem !important;  
+  }
 }

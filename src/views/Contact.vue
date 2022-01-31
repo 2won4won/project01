@@ -1,23 +1,23 @@
 <template>
   <div id="contact">
-    <div class="box lastBox ">
+    <div class="box" id="lastBox">
       <div class="imgBox">
           <div class="outer">
             <b-img :src="contact01" class="imgSize100"> </b-img>
             <div class="iconBox inn">
-              <div id="teamgram" class=" iconBox1" >
+              <div id="teamgram" class="iconBox3" >
                 <a href="" >
-                  <b-img :src="icon07" class="iconSize3"> </b-img>
+                  <b-img :src="icon07" class="iconSize4"> </b-img>
                 </a>
               </div>  
-              <div id="discord"  >
-                <a href="" class=" iconBox1" >
-                  <b-img :src="icon08" class="iconSize3"> </b-img>
+              <div id="discord" class="iconBox3" >
+                <a href=""  >
+                  <b-img :src="icon08" class="iconSize4"> </b-img>
                 </a>
               </div> 
-              <div id="blog" class="iconBox3"  > 
+              <div id="blog" class="iconBox3" > 
                 <a href="">
-                  <b-img :src="icon09" class="iconSize3">  </b-img>
+                  <b-img :src="icon09" class="iconSize4">  </b-img>
                 </a>
               </div>
             </div>
@@ -41,15 +41,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-// ㅁㅏ지막 page layout.or.media 에서 각각 설장
-.lastBox {
-  width: 100vw;
-  height: 110vh;
+// 마지막 page layout(padding)
+#lastBox {
+  margin-bottom: 5rem;
+  padding-bottom: 15rem;
 }
 .inn {
   position: absolute;
-  top: 87%;
-  left: 80%;
+  top: 95%;
+  left: 75%;
   transform: translate( -50%, -50%);
 }
 //icon으 수평정렬
@@ -58,5 +58,5 @@ export default {
   justify-content: flex-end;
   margin: 0;
   padding: 0;
-  }
+}
  </style>

@@ -5,7 +5,7 @@
         <div class="outer">
           <b-img :src="home01" class="imgSize100"></b-img>
             <a href="#stayUp" class="iconBox1 ">
-              <b-img :src="icon01" class="iconSize innerB"> </b-img>
+              <b-img :src="icon01" class="iconSize1 innerB"> </b-img>
             </a>  
         </div>
       </div>
@@ -17,11 +17,11 @@
     </div> 
      <div class="box" id="claim">
       <div class="imgBox">
-        <div class="outer">
+        <div class="outer ">
           <b-img :src="home03" class="imgSize100"></b-img>
           <!-- <div class="innerB" > -->
-            <a href="#service" class="iconBox1 ">
-              <b-img :src="icon02" class="iconSize innerB"> </b-img>
+            <a href="#service" class="iconBox1">
+              <b-img :src="icon02" class="iconSize1 innerD"> </b-img>
             </a>  
           <!-- </div> -->
         </div>
@@ -68,18 +68,18 @@
               <div id="w1" class="iconBox2">
                 <a href="" download >
                   <!-- <img src="/images/myw3schoolsimage.jpg"> -->
-                  <b-img :src="icon03" class="iconSize2" ></b-img>
+                  <b-img :src="icon03" class="iconSize3" ></b-img>
                 </a>  
               </div>
               <div id="w1" class="iconBox2">
                 <a href="" download >
                   <!-- <img src="/images/myw3schoolsimage.jpg"> -->
-                  <b-img :src="icon04" class="iconSize2" ></b-img>
+                  <b-img :src="icon04" class="iconSize3" ></b-img>
                 </a>  
               </div>
               <div id="w3" class="iconBox2">
                 <b-button  v-b-modal.ms1 >
-                  <b-img :src="icon05" class="iconSize2 wiconBox"></b-img>
+                  <b-img :src="icon05" class="iconSize3 wiconBox"></b-img>
                 </b-button>
                 <b-modal    id="ms1" 
                             ref="mymodal"
@@ -97,7 +97,7 @@
               </div>
               <div id="w4" class="iconBox2"> 
                 <b-button  v-b-modal.ms2  >
-                  <b-img :src="icon06" class="iconSize2 wiconBox"></b-img>
+                  <b-img :src="icon06" class="iconSize3 wiconBox"></b-img>
                 </b-button>  
                   <!-- ref=hide 연결 -->
                   <!-- 모달창 크기는 @media에서 확인 -->
@@ -161,34 +161,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-//버튼 기본 css 제거
-.btn-secondary {
-  color: $a;
-  font-weight: bold;
-  font-size:  $hover_before;
-  //버튼 바탕색 제거
-  background-color: transparent;
-  //border 제거
-  border: 0;
-  outline: 0;
-}
-//클릭 후 css 제거
-.btn-secondary:focus{ 	
-    border: none !important;
-    outline:none !important; 
-    box-shadow:none !important; 
-    background-color: transparent !important;
-}
-.btn-secondary:hover{ 	
-   color: $a_hover ;
-   font-size: $hover_font;
-   font-weight: bold;
-   text-shadow: 0.2rem 0.2rem black; 
-   background-color: transparent !important;
-}
 //모달 내 버튼 크기(전체길이) & 색상 지정
 .modalBtn {
-  width: 100%;
+  width: 100vw;
   min-height: 4vh;
   background-color: $bgBtn !important;
   border-block-style: none;
@@ -197,15 +172,14 @@ export default {
   padding: 0;
 }
 .btn.modalBtn:hover {
-  background-color: $a_hover!important; 
-  color: $bg !important;
+  background-color: $bgBtn_hover!important; 
+  color: $a !important;
 }
 .btn-block {
   margin: 0 !important;
 }
 #modalContents {
-  padding-left:  0.5rem;
-  padding-right:  0.5rem;
+  padding-left:  0.2rem;
+  padding-right:  0.2rem;
 }
-
 </style>

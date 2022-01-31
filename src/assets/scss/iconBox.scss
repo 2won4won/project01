@@ -1,4 +1,47 @@
-.iconBox1,.iconBox2, iconBox3{
+//icon sizing
+.iconSize1 {
+  width: 10rem;
+}
+.iconSize2 {
+  width: 10rem;
+}
+.iconSize3 {
+  width: 13rem;
+  @media (max-width:575px) { width: 8rem }  
+}
+.iconSize4 {
+  width: 10rem;
+  @media (max-width:575px) { width: 8rem }  
+}
+//icon location
+.outer {
+  position: relative;
+}  
+.inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -25%);
+}
+.innerB {
+  position: absolute;
+  top: 90%;
+  left: 90%;
+  transform: translate( -60%, -50%);
+}
+.innerD {
+  position: absolute;
+  top: 90%;
+  left: 90%;
+  transform: translate( -60%, -50%);
+}
+.innerC {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate( -50%, 0%);
+}
+.iconBox1,.iconBox2, .iconBox3{
   // width: 20%;
   margin: 0 0 0 auto;
   overflow: hidden;
@@ -13,5 +56,10 @@
 }
 .iconBox2:hover {
   opacity: 0.4;
-  transform: rotateY( 90deg )
+  transform: rotateY( 45deg )
 }
+.iconBox3:hover {
+  opacity: 0.2;
+  transform: rotateY( 45deg )
+}
+

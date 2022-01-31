@@ -1,0 +1,20 @@
+//버튼 기본 css 제거
+button.btn-secondary {
+    padding: 0;
+}
+button.btn-secondary {
+    background-color: transparent;
+    //border 제거
+    border: 0;
+    outline: 0;
+}
+//클릭 후 css 제거
+button.btn-secondary:focus{ 	
+    border: none !important;
+    outline:none !important; 
+    box-shadow:none !important; 
+    background-color: transparent !important;
+}
+button.btn-secondary:hover{ 	
+    background-color: transparent !important;
+}
