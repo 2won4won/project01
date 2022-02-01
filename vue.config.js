@@ -1,5 +1,5 @@
 module.exports = {
-  publicPath: '/WonhagoHome',
+  publicPath: '/wonhagoHome',
   css : {
     loaderOptions : {
       sass : {         
