@@ -1,4 +1,6 @@
 module.exports = {
+  outputDir: '/docs',
+  publicPath: '/Wonhago/',
   css : {
     loaderOptions : {
       sass : {         
