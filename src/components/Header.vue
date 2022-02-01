@@ -34,16 +34,16 @@
          <div class="d-block d-sm-none"> 
           <template>
               <div>
-                <b-button v-b-toggle.sidebar-footer >
+                <b-button v-b-toggle.sidebar>
                     <!-- <b-icon icon="list" id="listIcon" class="iconSize">  </b-icon> -->
                     <b-img :src="menu" id="listIcon" class="iconSize">  </b-img>
                 </b-button>
-                <b-sidebar id="sidebar-footer" 
-                           aria-label="Sidebar with custom footer" 
+                <b-sidebar id="sidebar" 
+                           title = "WONHAGO"
+                           shadow
                            backdrop
-                           no-header 
-                           shadow >
-                  <template #default="{ hide }">
+               >
+                  <!-- <template #default="{ hide }"> -->
                     <div class="p-3">
                       <!-- <h4 id="sidebar-no-header-title">Custom header sidebar</h4> -->
                       <nav class="mb-3">
@@ -54,9 +54,9 @@
                               <b-nav-item href="#contact" >CONTACT </b-nav-item>
                             </b-nav>
                       </nav>
-                      <b-button id="btn" block @click="hide"> X </b-button>
+                      <!-- <b-button id="btn" block @click="hide"> X </b-button> -->
                     </div>
-                  </template>
+                  <!-- </template> -->
               
                 </b-sidebar>
               </div>
@@ -137,7 +137,6 @@ export default {
       border-image-slice: 1;
       width: 30%;
       left: 35%;
-      
     }
   }
    a.nav-link:hover {

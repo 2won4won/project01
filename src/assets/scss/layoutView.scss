@@ -64,11 +64,29 @@ header.modal-header {
     height: 2rem !important;
   }
   .b-sidebar > .b-sidebar-body{
-    background-color: $sideBar;
-    width: 100vw;
+    width: 70vw;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  //sidebar bacolor change
+  .b-sidebar.bg-light {
+    --bs-bg-opacity: 1;
+    background-color: $sideBar !important;
+  }
+  .b-sidebar > .b-sidebar-header {
+    font-size: $sideBar_font;
+    padding: 1rem 2rem;
+    color: $a;
+  }
+  
+  button.close.text-dark {
+    background-color: $sideBar;
+    color: $a;
+  }
+  svg.bi-x.b-icon.bi {
+    color: $a;
+    font-size: $sideBar_font;
   }
   .innerD {
     position: absolute;
@@ -106,10 +124,5 @@ header.modal-header {
   }
   @media (min-width:1200px)  {
     width: 90% !important;  
-  }
-}
-.teamCard {
-  @media (min-width:1400px)  {
-    height: 30rem !important;  
   }
 }

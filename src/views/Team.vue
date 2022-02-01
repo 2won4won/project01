@@ -140,7 +140,7 @@ export default {
     font-weight: bold;
   }
   .tCard {
-  height: 27rem;
+  height: 30rem;
   border-radius: 0.5rem;
   // border: solid 0.3rem $cardBody;
   background-color: $bg;
