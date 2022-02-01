@@ -1,6 +1,7 @@
 module.exports = {
-  outputDir: '/docs',
-  publicPath: '/Wonhago/',
+  publicPath: process.env.NODE_ENV === 'production'
+      ?'https://2won4won.github.io/Wonhago/'
+      :'/',
   css : {
     loaderOptions : {
       sass : {         
