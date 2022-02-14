@@ -30,9 +30,11 @@ $t2: rgb(0,91,235);
 //image sizing
 .imgSize100 {
   width: 100vw;
+  height: 100vh;
   // height: calc(100vh - #{nav} - #{logoBox});
   @media (min-width:1400px) {
     width: 90vw;
+    height: 100vh;
   }
 }
 

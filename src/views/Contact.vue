@@ -48,8 +48,8 @@ export default {
 }
 .inn {
   position: absolute;
-  top: 95%;
-  left: 75%;
+  top: 90%;
+  left: 50%;
   transform: translate( -50%, -50%);
 }
 //icon으 수평정렬

@@ -27,7 +27,7 @@
         </div>
       </div>  
     </div> 
-    <div class="box " id="how">
+    <!-- <div class="box " id="how">
        <div class="imgBox ">
          <div class="outer">
             <b-img :src="home04" class="imgSize100"> 
@@ -43,7 +43,7 @@
           </div> 
          </div> 
        </div>  
-    </div> 
+    </div>  -->
     <div class="box" id="econmics">
       <div class="imgBox">
         <b-img :src="home05" class="imgSize100"></b-img>

@@ -10,9 +10,12 @@
 @media (min-width:992px) and (max-width:1199px ) { 
   html { font-size: 90%;}
 }  
-@media (min-width:1200px) and (max-width:1399px ){ 
+@media (min-width:1200px) { 
   html { font-size: 100%;}
 }  
-@media (min-width:1400px) { 
-  html { font-size: 120%;}
-}  
+// @media (min-width:1200px) and (max-width:1399px ){ 
+//   html { font-size: 100%;}
+// }  
+// @media (min-width:1400px) { 
+//   html { font-size: 100%;}
+// }  
