@@ -4,8 +4,8 @@ $a: rgb(254,254,254);
 $a_activeLine: rgb(26,52,102);
 $a_active: rgb(42,126,255);
 $a_hover: rgb(159,155,172);
-$a_font:1.7rem;
-$a_active_font:1.8rem;
+$a_font:1.4rem;
+$a_active_font:1.5rem;
 $bgBtn:rgb(47,47,51);
 $bgBtn_hover:rgb(74,74,74);
 $serviceBtn_font:1.9rem;
@@ -19,8 +19,12 @@ $t1: rgb(255,255,255);
 $hover_before: 1.2rem;
 $hover_font: 1.3rem;
 $t2: rgb(0,91,235);
+$nav-height: 5rem;
+$logo-height: 5rem;
 
-
+#logoBox {
+  max-height: $logo-height ;
+}
 //
 .box {
   width: 100vw;
@@ -29,32 +33,22 @@ $t2: rgb(0,91,235);
 }
 //image sizing
 .imgSize100 {
-  width: 100vw;
-  height: 100vh;
-  // height: calc(100vh - #{nav} - #{logoBox});
-  @media (min-width:1400px) {
-    width: 90vw;
+  @media (max-width:575px)  and (max-width:1199px ) { 
+    width: 100vw;
+  }  
+  @media (min-width:1200px) and (max-width:1399px ) { 
+    height: 90vh;
+    height: calc(100vh - $nav-height - $logo-height);
+  }  
+  @media (min-width:1400px) { 
     height: 100vh;
-  }
+    height: calc(100vh - $nav-height - $logo-height);
+  }  
 }
 
 .alignC {
   display: flex;
   justify-content: space-around;
 }
-//a 
-// a {
-//   text-decoration-line: none;
-//   color: $a;
-//   font-weight: bold;
-//   font-size: $hover_before;
- 
-//   &:hover {
-//     color: $a_hover ;
-//     font-size: $hover_font;
-//     // text-shadow: 0.1rem 0.1rem $a; 
-//     text-shadow: 0.2rem 0.2rem black; 
-//     // text-shadow: 0.2rem 0.2rem rgb(89,87,93); 
-//   }
-// }  
+
 

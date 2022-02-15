@@ -5,6 +5,7 @@ import Home from '../views/Home.vue'
 import Team from '../views/Team.vue'
 import Contact from '../views/Contact.vue'
 import Service from '../views/Service.vue'
+import Footer from '../components/Footer.vue'
 
 Vue.use(VueRouter)
 
@@ -13,6 +14,11 @@ const routes = [
     path: '/',
     name: 'Header',
     component: Header
+  },
+  {
+    path: '/footer',
+    name: 'Footer',
+    component: Footer
   },
   {
     path: '/home',

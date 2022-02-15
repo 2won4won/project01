@@ -120,12 +120,14 @@
         </div>
       </div>  
     </div> 
+   
   </div>
 </template>
 
 <script>
 import OnePageKor from './OnePageKor.vue';
 import OnePageEng from './OnePageEng.vue';
+// import Footer from '@/components/Footer';
 
 export default {
   name: "Home",

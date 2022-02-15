@@ -17,17 +17,18 @@
                   <b-card-group deck   >
                     <b-row id="teamR"  >
                       <b-card class="col teamCard"  v-for="(items, i) in data" :key="i" >
-                          <b-avatar :src="items.picture" id="ava" size="10rem" ></b-avatar>
+                          <b-avatar :src="items.picture" id="ava" size="8rem" ></b-avatar>
                           <div class="card-header">
                               <div class="card_title"> {{ items.name }} </div>
                               <div class="card-sub"> {{ items.part}} </div>
                           </div>  
-                          <div  class="card-career" v-for="(ci, i) in items.career" :key="i">
-                                <!-- <div>  {{ mark }} </div> -->
-                                <div >  {{ ci.career1 }} </div>
+                          <div  class="card-career" v-for="(ci, i) in items.career" :key="i" >
+                              <!-- <span>    {{ mark }} </span>   -->
+                                <div > {{ ci.career1 }} </div>
                                 <div>  {{ ci.career2 }} </div>
                                 <div > {{ ci.career3 }} </div>
                                 <div > {{ ci.career4 }} </div>
+                          
                           </div>
                           <template #footer></template>
                       </b-card>
@@ -103,6 +104,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  #sel {
+    margin-top: 2rem;
+  }
+  #teamR {
+    margin-top: 1rem;
+  }
  //card length->media
   .carouselBox {
     padding: 3rem;
@@ -116,31 +123,33 @@ export default {
     padding-top: 1rem;
     //card 크기
     //  width: 20rem;
-     height: 35rem;
+     height: auto;
+    //  height: 27rem;
   }
   .card-body {
-    border: solid 0.3rem $cardBody;
+    border: solid 0.1rem $cardBody;
     border-radius: 0.6rem;
   }
   .card-header {
-    padding-top: 1rem;
+    padding-top: 2rem;
     padding-bottom: 1rem;
   }
   .card-career {
     width: auto;
-    font-size: 1rem;
+    font-size: 0.8rem;
+    text-align: left;
   }
  
   .card_title {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     font-weight: bolder;
   }
   .card-sub {
-    font-size: 1.3rem;
-    font-weight: bold;
+    font-size: 1.2rem;
+    // font-weight: bold;
   }
   .tCard {
-  height: 30rem;
+  height: 25rem;
   border-radius: 0.5rem;
   // border: solid 0.3rem $cardBody;
   background-color: $bg;

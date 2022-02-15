@@ -24,11 +24,19 @@
           </div>
         </div>
     </div>  
+    <!-- <div id="footer" > -->
+      <Footer />
+    <!-- </div>   -->
   </div>
 </template>
 <script>
+import Footer from '@/components/Footer';
+
 export default {
-  name: 'contact',
+name: 'Contact',
+ components: {
+    Footer ,
+  },
   data() {
     return {
       contact01: require ('../assets/body/home09.png'),
