@@ -24,17 +24,17 @@
           </div>
         </div>
     </div>  
-    <!-- <div id="footer" > -->
+    <div id="footer" > 
       <Footer />
-    <!-- </div>   -->
+     </div>  
   </div>
 </template>
 <script>
-import Footer from '@/components/Footer';
+import Footer from "@/components/Footer.vue";
 
 export default {
 name: 'Contact',
- components: {
+components: {
     Footer ,
   },
   data() {

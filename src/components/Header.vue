@@ -42,9 +42,9 @@
                               <b-nav-item href="#team" >TEAM </b-nav-item>
                               <b-nav-item href="#contact" >CONTACT </b-nav-item>
                             </b-nav>
-                            <b-nav>
-                             <b-nav-item href="#team" >TEAM </b-nav-item>
-                            </b-nav>
+                            <!-- <b-nav> -->
+                             <!-- <b-nav-item href="/team" >TEAM </b-nav-item> -->
+                            <!-- </b-nav> -->
                       </nav>
                     </div>
                 </b-sidebar>
@@ -74,6 +74,7 @@ import Contact from "@/views/Contact.vue";
 export default {
   name: 'header',
   components: {
+    // Service, Contact, Home,
     Service, Team, Contact, Home,
   },
   data() {

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="footer">
     <b-container fluid id="footerBox" >
       © 2021 BUCHIGO.Inc. All rights reserved.
     </b-container>  
@@ -15,6 +15,5 @@ export default {
 <style  lang="scss">
  #footerBox {
    color: $a ;
-   
  }
 </style>

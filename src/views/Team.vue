@@ -1,6 +1,6 @@
 <template>
   <div id="team">
-    <div class="box  d-none d-sm-block" >
+    <div class="box imgsize100 d-none d-sm-block" >
       <b-container fluid id="smContainer" class="d-flex justify-content-center">
         <div class="carouselBox"> 
           <b-carousel
@@ -109,6 +109,9 @@ export default {
   }
   #teamR {
     margin-top: 1rem;
+    width: 76vw;
+    display: flex;
+    justify-content: center;
   }
  //card length->media
   .carouselBox {
@@ -119,12 +122,12 @@ export default {
     color: $a;
     background-color: $bg ;
     // 마지막 카드 넓이가 전체 길이를 차지하지 않기 위해
-    max-width: 35%;
+    max-width: 30%;
     padding-top: 1rem;
     //card 크기
     //  width: 20rem;
-     height: auto;
-    //  height: 27rem;
+    //  height: auto;
+     height: 35rem;
   }
   .card-body {
     border: solid 0.1rem $cardBody;
@@ -162,6 +165,6 @@ export default {
 
 }
 .swiper-slide {
-  width: 80%;
+  width: 70%;
 }
 </style>
