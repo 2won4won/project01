@@ -127,7 +127,7 @@ export default {
     //card 크기
     //  width: 20rem;
     //  height: auto;
-     height: 35rem;
+     height: auto;
   }
   .card-body {
     border: solid 0.1rem $cardBody;

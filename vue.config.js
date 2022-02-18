@@ -1,6 +1,7 @@
 module.exports = {
-  // publicPath: '/WonhagoHome',
   publicPath: '/Wonhago',
+  // publicPath: '/WonhagoHome',
+  // publicPath: '/wonhagomain',
   css : {
     loaderOptions : {
       sass : {         

@@ -14,14 +14,25 @@
           <div class="d-block d-sm-none"> 
             <b-img :src="logo" id="logoIcon"></b-img>  
           </div> 
+          
+          <!-- 메뉴바 1-->
+         <!-- <b-navbar-toggle target="nav-collapse">
+            <template #default="{ expanded }">
+              <b-icon v-if="expanded" icon="chevron-bar-up"></b-icon>
+              <b-icon v-else icon="chevron-bar-down"></b-icon>
+            </template>
+         </b-navbar-toggle> -->
          <b-collapse id="nav-collapse" is-nav >
                    <!-- class="d-flex flex-md-row flex-xl-column" -->
             <b-navbar-nav  id="navList"  v-b-scrollspy:list>
               <b-nav-item href="#home"  >HOME </b-nav-item>
               <b-nav-item href="#service">SERVICE </b-nav-item>
-              <b-nav-item href="#team" >TEAM </b-nav-item>
+                <b-nav-item href="#team" >TEAM </b-nav-item>
               <b-nav-item href="#contact" >CONTACT </b-nav-item>
             </b-navbar-nav>
+           <!-- <b-navbar-nav>
+              <b-nav-item href="/team" >TEAM </b-nav-item>
+            </b-navbar-nav>    -->
           </b-collapse>
          <div class="d-block d-sm-none"> 
           <template>
@@ -42,8 +53,11 @@
                             <b-nav  id="navList" vertical v-b-scrollspy:list>
                               <b-nav-item href="#home"  >HOME </b-nav-item>
                               <b-nav-item href="#service">SERVICE </b-nav-item>
-                              <b-nav-item href="#team" >TEAM </b-nav-item>
+                              <!-- <b-nav-item href="#team" >TEAM </b-nav-item> -->
                               <b-nav-item href="#contact" >CONTACT </b-nav-item>
+                            </b-nav>
+                            <b-nav>
+                             <b-nav-item href="/team" >TEAM </b-nav-item>
                             </b-nav>
                       </nav>
                       <!-- <b-button id="btn" block @click="hide"> X </b-button> -->
@@ -61,7 +75,7 @@
       <div id="list"  style="position:relative; overflow-y:auto; height:100vh" >
         <Home id="home"/>
         <Service id="service" />
-        <Team id="team" />
+        <!-- <Team id="team" /> -->
         <Contact id="contact" />
       </div>
     </b-container>
@@ -71,13 +85,13 @@
 <script>
 import Home from "@/views/Home.vue";
 import Service from "@/views/Service.vue";
-import Team from "@/views/Team.vue";
+// import Team from "@/views/Team.vue";
 import Contact from "@/views/Contact.vue";
 
 export default {
   name: 'header',
   components: {
-    Service, Contact, Home,Team
+    Service, Contact, Home,
   },
   data() {
     return {
