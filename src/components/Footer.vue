@@ -1,7 +1,7 @@
 <template>
   <div id="footer">
     <b-container fluid id="footerBox" >
-      © 2021 BUCHIGO.Inc. All rights reserved.
+     <p> © 2021 BUCHIGO.Inc. All rights reserved.</p>
     </b-container>  
   </div>  
 </template>

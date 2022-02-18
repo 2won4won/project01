@@ -1,5 +1,5 @@
 <template>
-  <div id="header" >
+  <div id="head" >
     <!-- 네비바 상단 고정 : class="fixed-top" -->
     <b-container fluid id="navBox" class="fixed-top">
       <!-- xs에서 안보임: logo 이미지삽입 -->
@@ -75,7 +75,7 @@ import Team from "@/views/Team.vue";
 import Contact from "@/views/Contact.vue";
 
 export default {
-  name: 'header',
+  name: 'Head',
   components: {
     Service, Contact, Home,Team
   },
