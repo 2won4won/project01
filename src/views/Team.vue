@@ -3,11 +3,12 @@
     <div class="box imgsize100 d-none d-sm-block" >
       <div fluid id="cBox" class="box d-flex justify-content-center ">
       <!-- <b-container fluid id="cBox" class="box d-flex justify-content-center "> -->
+        <!-- <div class="carouselBox d-none d-sm-block">  -->
         <div class="carouselBox"> 
           <b-carousel
               id="sel"
               v-model="slide"
-              :interval="3000"
+              :interval="4000"
               controls
               indicators
               fade
@@ -23,8 +24,8 @@
                                 <div class="card_title"> {{ items.name }} </div>
                                 <div class="card-sub"> {{ items.part}} </div>
                             </div>  
-                          <div id="cardC">
-                            <div id="cardCa">
+                          <div class="cardC">
+                            <div class="cardCa">
                                 <div  class="card-career" v-for="(ci, i) in items.career" :key="i" >
                                 <div> {{ mark }} &nbsp;
                                   <span>
@@ -58,18 +59,28 @@
       <swiper class="swiper" :options="swiperOption">
         <swiper-slide  v-for="(items, i) in data" :key="i">
             <b-card class="tCard"  >
-                <b-avatar :src="items.picture" id="ava" size="5rem" ></b-avatar>
+                <b-avatar :src="items.picture" id="ava" size="7rem" ></b-avatar>
                 <div class="card-header">
                     <div class="card_title"> {{ items.name }} </div>
                     <div class="card_sub"> {{ items.part}} </div>
                 </div>  
-                <div id="cardC">
-                  <div  class="card-career" v-for="(ci, i) in items.career" :key="i" >
-                        <div>  {{ ci.career1 }} </div>
+                <div class="cardC">
+                  <div class="cardCa">
+                   <div  class="card-career" v-for="(ci, i) in items.career" :key="i" >
+                     <div> {{ mark }} &nbsp;
+                                  <span>
+                                        <span > {{ ci.career1 }} </span>
+                                        <span>  {{ ci.career2 }} </span>
+                                        <span > {{ ci.career3 }} </span>
+                                        <span > {{ ci.career4 }} </span>
+                                  </span> 
+                                </div>    
+                        <!-- <div>  {{ ci.career1 }} </div>
                         <div>  {{ ci.career2 }} </div>
                         <div > {{ ci.career3 }} </div>
-                        <div > {{ ci.career4 }} </div>
-                  </div>
+                        <div > {{ ci.career4 }} </div> -->
+                   </div>
+                  </div> 
                 </div>  
                 <template #footer></template>
             </b-card>
@@ -180,15 +191,15 @@ export default {
     font-size: 1.1rem;
      font-weight: 300;
   }
-  #cardC {
+  .cardC {
     //2-1. caree 
     display: flex;
     justify-content: center;
     align-items: center;
     
   }
-  #cardCa {
-    //2-2 길이 조정
+  .cardCa {
+    //2-2 넓이 조정
     width: 90%;
   }
   .tCard {
@@ -200,10 +211,12 @@ export default {
 .swiper {
   padding-top: 3rem;
   width: 90%;
-  border: 1px transparent solid;
-
 }
 .swiper-slide {
-  width: 70%;
+  // border: 1px $a_hover solid;
+  width: 60%;
+  height: 22rem;
+  margin-bottom: 5rem;
+  margin-top: 2rem;
 }
 </style>

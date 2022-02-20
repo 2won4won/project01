@@ -2,22 +2,20 @@
   <div id="header" >
     <!-- 네비바 상단 고정 : class="fixed-top" -->
     <b-container fluid id="navBox" class="fixed-top">
-      <!-- xs에서 안보임: logo 이미지삽입 -->
+      <!-- xs에서 안보임: top logo -->
       <div class="d-none d-sm-block">
         <div> <b-img :src="logo" class="logoSize"></b-img>  </div> 
       </div>
       <!-- 메뉴바 -->
       <div id="nav" >
-        <b-navbar toggleable="sm" type="dark" >
+        <b-navbar toggleable="sm" >
           <div >
             <!-- xs 에서만 보임: logo 이미지삽입 -->
             <div class="d-block d-sm-none" id="logoBox"> 
               <b-img :src="logo" id="logoIcon"></b-img>  
-              <b-img :src="nav"></b-img> 
             </div> 
-            <b-navbar-toggle target="nav-collapse">
-              <!-- <b-img :src="nav"></b-img>  -->
-            </b-navbar-toggle>
+              <!-- <b-navbar-toggle target="nav-collapse">
+              </b-navbar-toggle> -->
             <b-collapse id="nav-collapse" is-nav >
                     <!-- class="d-flex flex-md-row flex-xl-column" -->
               <b-navbar-nav id="navList"  v-b-scrollspy:list>
@@ -35,13 +33,12 @@
             <template>
                 <div>
                   <b-button v-b-toggle.sidebar>
-                      <b-icon icon="list" id="listIcon" class="iconSize">  </b-icon>
-                      <!-- <b-img :src="nav" id="listIcon" class="iconSize">  </b-img> -->
+                      <b-img :src="nav" id="listIcon" class="iconSize">  </b-img>
                   </b-button>
                   <b-sidebar id="sidebar" 
-                            title = "WONHAGO"
-                            shadow
-                            backdrop
+                             title = "Wonhago"
+                             shadow
+                             backdrop
                 >
                     <!-- <template #default="{ hide }"> -->
                       <div class="p-3">

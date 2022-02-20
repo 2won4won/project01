@@ -3,7 +3,9 @@
   font-family:'Poppins';
   @media (max-width:575px) { 
     background-color:$t1;
-    padding-right: 1rem;
+    padding: 1rem 2rem;
+    // border: 1px solid red;
+    height: 5rem;
   }
   @media (min-width:576px)  { 
     display: flex;
@@ -53,8 +55,23 @@ header.modal-header {
 }
 @media (max-width:575px) {
   // icon size
-  #logoIcon { width: 30%;}
-  #listIcon { width: 2.5rem ;}
+  #logoIcon { 
+    width: 12rem;
+    object-fit: contain;
+  }
+  #listBox {
+    width: 2rem;
+  }
+  #lastBox {
+    // height: 50vh;
+    // text-align: center;
+    
+  }
+  #listIcon { 
+    width: 2.5rem ;
+  }
+
+  //sildebar
   //sidebar 내 list 줄간격
   li.nav-item {
     padding: 1.5rem;
@@ -67,7 +84,7 @@ header.modal-header {
   .b-sidebar > .b-sidebar-body{
     width: 70vw;
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
   }
   //sidebar bacolor change
@@ -98,27 +115,10 @@ header.modal-header {
   .inn {
     left: 70% !important;
   }
-//card css: 전체 넓이 사용하기 위해서
-  // #smContainer {
-  //   padding-left: 0;
-  // }
-  // card 2개 올라올기 위해서
-  // .carouselBox {
-  //   width: 100vw!important;
-  //   padding-left: 0.3rem !important;
-  //   padding-right: 0.3rem !important;
-  //   margin-left: 0;
-  // }
-  // .container-fluid {
-  //   padding-right: 0 !important;
-  // }
-
 }
 .carouselBox {
   @media (min-width:576px) and (max-width:991px ) { 
     width: 100vw !important; 
-    // padding-left: 1rem !important; 
-    // padding-right: 1rem !important;
   }  
   @media (min-width:992px) and (max-width:1199px ){
     width: 100vw !important;  

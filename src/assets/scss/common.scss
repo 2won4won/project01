@@ -1,5 +1,6 @@
-$bg_nav: rgb(28, 28, 28);
-$bg: rgb(21,25,36);
+$bg_nav: black;
+// $bg: black;
+$bg: rgb(23,26,39);
 $a: rgb(254,254,254);
 $a_activeLine: rgb(26,52,102);
 $a_active: rgb(42,126,255);
@@ -13,7 +14,7 @@ $serviceBtn_hover_font:2.1rem;
 $serviceBtn:rgb(74,74,74);
 $cardBody:rgb(71,71,71);
 $sideBar:rgb(74,74,74);
-$sideBar_font: 2rem;
+$sideBar_font: 3rem;
 $t1: rgb(255,255,255);
 
 $hover_before: 1.2rem;
@@ -21,20 +22,20 @@ $hover_font: 1.3rem;
 $t2: rgb(0,91,235);
 $nav_height: 3.5rem;
 $logoBox_height: 2rem;
-$logo_height: 4rem;
+$logo_height: 3.7rem;
 $bHight : calc(100vh - $nav_height - $logo_height );
 $bHightMd : calc(58vh - $nav_height - $logo_height );
+$bHightSm : calc(58vh - $logo_height );
 $footerBox : 3rem;
 //
 .box {
   width: 100vw;
   margin: 0 !important;
   padding: 0 !important;
-  height: $bHight;
   // border: 1px solid red;
     @media (max-width:574px){
-      width:90vw ;
-      height: 40vh;
+      width:calc(100vw - 1rem) ;
+      // height: 40vh;
     }
     @media (min-width:575px) and (max-width:767px ) { 
       height: 40vh;
@@ -52,7 +53,8 @@ $footerBox : 3rem;
 //image sizing
 .imgSize100 {
   @media (max-width:574px){
-    width:100vw ;
+    width:90vw ;
+    // border: 1px solid yellowgreen;
   }
   @media (min-width:575px)  and (max-width:1199px ) { 
     width: 85vw;

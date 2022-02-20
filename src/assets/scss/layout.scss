@@ -1,5 +1,8 @@
 @media (max-width:575px) { 
-  html { font-size: 66%;}
+  html { 
+    font-size: 66%;
+    overflow: hidden;
+  }
 }  
 @media (min-width:576px) and (max-width:767px ) { 
   html { font-size: 70%;}

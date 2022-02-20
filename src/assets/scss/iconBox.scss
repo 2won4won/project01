@@ -8,7 +8,10 @@
 .iconSize3 {
   width: 9rem;
   margin: 1.2rem;
-  @media (max-width:575px) { width: 8rem }  
+  @media (max-width:575px) { 
+    width: 6.2rem;
+    margin: 0.7rem;
+   }  
 }
 .iconSize4 {
   width: 9rem;
@@ -32,12 +35,6 @@
   left: 90%;
   transform: translate( -50%, -50%);
 }
-.innerD {
-  position: absolute;
-  top: 92%;
-  left: 90%;
-  transform: translate( -50%, -50%);
-}
 .innerC {
   position: absolute;
   top: 50%;
@@ -53,9 +50,9 @@
 .iconBox1:hover {
   // transform: translateX( -6rem ) scale(1.1);
   opacity: 0.4;
-  // -moz-box-shadow: 0 0 10px #ccc;
-  // -webkit-box-shadow: 0 0 10px #ccc;
-  // box-shadow: 0 0 10px #ccc;
+  -moz-box-shadow: 0 0 10px #ccc;
+  -webkit-box-shadow: 0 0 10px #ccc;
+  box-shadow: 0 0 10px #ccc;
 }
 .iconBox2:hover {
   opacity: 0.4;
