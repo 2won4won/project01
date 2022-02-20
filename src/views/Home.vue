@@ -20,8 +20,9 @@
         <div class="outer ">
           <b-img :src="home03" class="imgSize100"></b-img>
           <!-- <div class="innerB" > -->
-            <a href="#service" class="iconBox1">
-              <b-img :src="icon02" class="iconSize1 innerD"> </b-img>
+            <a href="https://test.wonhago.com" 
+                    target="_blank" class="iconBox1">
+              <b-img :src="icon02" class="iconSize1 innerB"> </b-img>
             </a>  
           <!-- </div> -->
         </div>
@@ -120,7 +121,6 @@
         </div>
       </div>  
     </div> 
-   
   </div>
 </template>
 
@@ -151,6 +151,10 @@ export default {
         icon06: require ('../assets/icons/icon06.png'),
         title1: "WONHAGO(ENG)",
         title2: "WONHAGO(KOR)",
+        contact01: require ('../assets/body/home09.png'),
+      icon07: require ('../assets/icons/icon07.png'),
+      icon08: require ('../assets/icons/icon08.png'),
+      icon09: require ('../assets/icons/icon09.png'),
     }
   },
   methods: {

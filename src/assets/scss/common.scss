@@ -4,7 +4,7 @@ $a: rgb(254,254,254);
 $a_activeLine: rgb(26,52,102);
 $a_active: rgb(42,126,255);
 $a_hover: rgb(159,155,172);
-$a_font:1.4rem;
+$a_font:1.1rem;
 $a_active_font:1.5rem;
 $bgBtn:rgb(47,47,51);
 $bgBtn_hover:rgb(74,74,74);
@@ -19,17 +19,35 @@ $t1: rgb(255,255,255);
 $hover_before: 1.2rem;
 $hover_font: 1.3rem;
 $t2: rgb(0,91,235);
-$nav-height: 7rem;
-$logo-height: 5rem;
-
-#logoBox {
-  max-height: $logo-height ;
-}
+$nav_height: 3.5rem;
+$logoBox_height: 2rem;
+$logo_height: 4rem;
+$bHight : calc(100vh - $nav_height - $logo_height );
+$bHightMd : calc(58vh - $nav_height - $logo_height );
+$footerBox : 3rem;
 //
 .box {
   width: 100vw;
-  margin: 0;
-  padding: 0;
+  margin: 0 !important;
+  padding: 0 !important;
+  height: $bHight;
+  // border: 1px solid red;
+    @media (max-width:574px){
+      width:90vw ;
+      height: 40vh;
+    }
+    @media (min-width:575px) and (max-width:767px ) { 
+      height: 40vh;
+    } 
+    @media (min-width:768px) and (max-width:991px ) { 
+      height: $bHightMd;
+    }  
+    @media (min-width:992px) and (max-width:1199px ) { 
+      height: $bHightMd;
+    } 
+    @media (min-width:1200px)  { 
+      height: $bHight ;
+    }  
 }
 //image sizing
 .imgSize100 {
@@ -37,15 +55,11 @@ $logo-height: 5rem;
     width:100vw ;
   }
   @media (min-width:575px)  and (max-width:1199px ) { 
-    width: 100vw;
+    width: 85vw;
   }  
-  @media (min-width:1200px) and (max-width:1399px ) { 
-    height: 90vh;
-    height: calc(100vh - $nav-height - $logo-height);
-  }  
-  @media (min-width:1400px) { 
-    // height: 90vh;
-    height: calc(100vh - $nav-height - $logo-height);
+  @media (min-width:1200px)  { 
+    height: 80vh;
+    // border: 1px solid red;
   }  
 }
 
@@ -53,5 +67,3 @@ $logo-height: 5rem;
   display: flex;
   justify-content: space-around;
 }
-
-

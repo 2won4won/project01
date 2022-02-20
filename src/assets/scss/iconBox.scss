@@ -1,16 +1,19 @@
 //icon sizing
 .iconSize1 {
-  width: 10rem;
+  width: 7rem;
 }
 .iconSize2 {
   width: 10rem;
 }
 .iconSize3 {
-  width: 11rem;
+  width: 9rem;
+  margin: 1.2rem;
   @media (max-width:575px) { width: 8rem }  
 }
 .iconSize4 {
-  width: 10rem;
+  width: 9rem;
+  padding: 0;
+  margin: 0;
   @media (max-width:575px) { width: 8rem }  
 }
 //icon location
@@ -25,15 +28,15 @@
 }
 .innerB {
   position: absolute;
-  top: 90%;
+  top: 92%;
   left: 90%;
-  transform: translate( -60%, -50%);
+  transform: translate( -50%, -50%);
 }
 .innerD {
   position: absolute;
-  top: 90%;
+  top: 92%;
   left: 90%;
-  transform: translate( -60%, -50%);
+  transform: translate( -50%, -50%);
 }
 .innerC {
   position: absolute;
@@ -62,4 +65,21 @@
   opacity: 0.2;
   transform: rotateY( 45deg )
 }
-
+// 마지막 page layout(padding)
+#lastBox {
+  @media (max-width:574px){
+    //  width:100vw ;
+   }
+   @media (min-width:575px)  and (max-width:767px ) { 
+     height: 40vh;
+    }  
+    @media (min-width:768px) and (max-width:991px ) { 
+      height: 48vh;
+    }  
+    @media (min-width:992px) and (max-width:1199px ) { 
+      height: 48vh;
+    } 
+    @media (min-width:1200px)  { 
+      height: 100vh;
+    }  
+}

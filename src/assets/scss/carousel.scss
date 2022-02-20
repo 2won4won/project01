@@ -8,25 +8,21 @@
   overflow: hidden; clip: rect(0,0,0,0); border: 0;
 }
 // icon 위치: top
-a.carousel-control-next, .carousel-control-prev {
+a.carousel-control-next, a.carousel-control-prev {
   margin: 0;
+  display: none;
 }
 .carousel-control-prev-icon {
   position: absolute;
   // top: 0;
   top: -1.5rem;
-  margin-left: 25rem;
+  margin-left: 30rem;
 }
 .carousel-control-next-icon{
   position: absolute;
   top: -1.5rem;
-  margin-right: 25rem;
+  margin-right: 30rem;
 }
-// .carousel-control-next-icon, .carousel-control-prev-icon {
-//   position: absolute;
-//   // top: 0;
-//   top: -1.5rem;
-// }
 /* indicator location: top  */
 .carousel-indicators {
   position: absolute;
@@ -58,7 +54,6 @@ a.carousel-control-next, .carousel-control-prev {
   width: 0.7rem;
   height: 0.7rem;
   top: -0.1rem;
-  // box-shadow: 0.2rem  whitesmoke;
 }
 //swiper
 .swiper-pagination-clickable {

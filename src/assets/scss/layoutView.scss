@@ -40,7 +40,7 @@ header.modal-header {
 #serviceBox {
   @media (max-width:575px) { 
     width: 100vw;
-    height: 40vh;
+    height: 50vh;
   }
   @media (min-width:576px) and (max-width:1199px ) { 
     width: 100vw;
@@ -48,7 +48,7 @@ header.modal-header {
   }
   @media (min-width:1200px) { 
     width: 100vw;
-    height: 100vh;
+    height: $bHight;
   }
 }
 @media (max-width:575px) {
@@ -116,14 +116,15 @@ header.modal-header {
 }
 .carouselBox {
   @media (min-width:576px) and (max-width:991px ) { 
-    width: 100% !important; 
-    padding-left: 1rem !important; 
-    padding-right: 1rem !important;
+    width: 100vw !important; 
+    // padding-left: 1rem !important; 
+    // padding-right: 1rem !important;
   }  
   @media (min-width:992px) and (max-width:1199px ){
-    width: 95% !important;  
+    width: 100vw !important;  
   }
   @media (min-width:1200px)  {
-    width: 85% !important;  
+    width: 85vw !important;  
   }
 }
+

@@ -21,8 +21,13 @@ export default {
 </script>
 
  <style lang="scss" scoped> 
+ #service {
+    // border: 1px solid blue;
+  // background-color: aqua;
+ }
  //server 화면 전체의 높이 지정, imgBox 중앙정렬
  #serviceBox {
+  //  border: 1px solid red;
    position: relative;
  }
  #out {
@@ -34,26 +39,6 @@ export default {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-// .btn {
-//   position: relative;
-//   border: none;
-//   font-size: $web_font;
-//   transition: color 0.5s, transform 0.2s, background-color 0.2s;
-//   outline: none;
-//   border-radius: 0.2rem ;
-//   margin: 0 1rem;
-//   padding:1.5rem 5rem;
-//   border: 0.2rem  solid  $bgBtn;
-//   // border: 0.2rem  solid transparent;
-// }
-// .btn:active {
-//   transform: translateY(0.2rem);
-// }
-// .btn::after, .btn::before {
-//   border-radius: 0.2rem ;
-// }
-
 .serviceBtn {
   background-color: transparent;
   color: $bgBtn;

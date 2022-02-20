@@ -1,7 +1,11 @@
 module.exports = {
-  publicPath: '/Wonhago',
+  //for git page
+  // publicPath: '/Wonhago',
   // publicPath: '/WonhagoHome',
   // publicPath: '/wonhagomain',
+  // devServe: {
+  //   index: 'home.html'
+  // },
   css : {
     loaderOptions : {
       sass : {         

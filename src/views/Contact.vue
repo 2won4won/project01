@@ -1,9 +1,13 @@
 <template>
   <div id="contact">
-    <div class="box" id="lastBox">
+    <div  >
+    <!-- <div id="lastBox" class="box"> -->
+    <div  class="box">
       <div class="imgBox">
-          <div class="outer">
-            <b-img :src="contact01" class="imgSize100"> </b-img>
+          <div class="outer" id="lastBox">
+            <div >
+              <b-img :src="contact01" class="imgSize100"> </b-img>
+            
             <div class="iconBox inn">
               <div id="teamgram" class="iconBox3" >
                 <a href="" >
@@ -21,21 +25,20 @@
                 </a>
               </div>
             </div>
+               <div id="footer">   
+                <p> © 2021 BUCHIGO.Inc. All rights reserved.</p>
+            </div>
           </div>
-        </div>
-    </div>  
-    <div id="footer" > 
-      <Footer />
-     </div>  
+          </div>
+      </div>
+    </div>
+    </div>
   </div>
 </template>
 <script>
-import Footer from "@/components/Footer.vue";
-
 export default {
 name: 'Contact',
 components: {
-    Footer ,
   },
   data() {
     return {
@@ -44,19 +47,17 @@ components: {
       icon08: require ('../assets/icons/icon08.png'),
       icon09: require ('../assets/icons/icon09.png'),
     }
-  },
+  }
 }
 </script>
 
 <style lang="scss" scoped>
-// 마지막 page layout(padding)
 #lastBox {
-  margin-bottom: 5rem;
-  padding-bottom: 15rem;
+  // height: 100vh;
 }
 .inn {
   position: absolute;
-  top: 90%;
+  top: 75%;
   left: 50%;
   transform: translate( -50%, -50%);
 }
@@ -67,4 +68,14 @@ components: {
   margin: 0;
   padding: 0;
 }
+#footer {
+   color: $a_hover ;
+  text-align: right;
+  padding-right: 2rem;
+  margin-bottom: 0;
+  padding-bottom: 0;
+ }
+ p {
+   font-size: 0.7rem;
+ }
  </style>
